@@ -1,0 +1,20 @@
+tinyMCE.addI18n('tr.emotions_dlg',{
+title:"Gülümseme Ekle",
+desc:"Gülümsemeler",
+cool:"Karizmatik",
+cry:"Ağlama",
+embarassed:"Mahçup",
+foot_in_mouth:"Ayağı ağzında",
+frown:"Kaşlarını çatmış",
+innocent:"Masum",
+kiss:"Öpücük",
+laughing:"Gülme",
+money_mouth:"Para Ağız",
+sealed:"Mühürlü",
+smile:"Tebessüm",
+surprised:"Süpriz",
+tongue_out:"Dil Çıkar",
+undecided:"Kararsız",
+wink:"Göz Kırp",
+yell:"Bağırma"
+});
