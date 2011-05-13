@@ -10,40 +10,49 @@ FileManager.Language.tr = {
 	more: 'Detaylar',
 	width: 'Genişlik:',
 	height: 'Yükseklik:',
-	
+
 	ok: 'Tamam',
-	open: 'Dosyayı Seç',
+	open: 'Dosya Seç',
 	upload: 'Yükle',
 	create: 'Klasör Oluştur',
-	createdir: 'Lütfen Klasör İsmi Belirleyin:',
+	createdir: 'Lütfen Bir Klasör Adı Belirtin:',
 	cancel: 'İptal',
-	
+	error: 'Hata',
+
 	information: 'Bilgi',
 	type: 'Tip:',
 	size: 'Boyut:',
 	dir: 'Yol:',
-	modified: 'Son Düzenleme:',
+	modified: 'Son düzenleme:',
 	preview: 'Önizleme',
 	close: 'Kapat',
 	destroy: 'Sil',
 	destroyfile: 'Dosyayı silmek istediğinizden eminmisiniz?',
-	
-	rename: 'Yeniden adlandır',
-	renamefile: 'Lütfen yeni bir dosya ismi girin:',
-	
+
+	rename: 'Yeniden Adlandır',
+	renamefile: 'Lütfen yeni bir dosya adı girin:',
+
 	download: 'İndir',
-	nopreview: '<i>Önizleme mümkün değil</i>',
-	
+	nopreview: '<i>Önizleme mevcut değil</i>',
+
 	title: 'Başlık:',
 	artist: 'Artist:',
 	album: 'Albüm:',
 	length: 'Uzunluk:',
-	bitrate: 'Kalite:',	
+	bitrate: 'Kalite:',
+
 	deselect: 'Kaldır',
-	
+
 	nodestroy: 'Serverda dosya silme engellenmiş.',
-	
-	'backend.disabled': 'Bu işlem sunucu tarafından devre dışı bırakılmış',
+
+	toggle_side_boxes: 'Küçük Resim Görünümü',
+	toggle_side_list: 'Liste Görünümü',
+	show_dir_thumb_gallery: 'Önizleme panelinde doyaları küçük resim olarak görüntüle',
+	drag_n_drop: 'Taşı & Bırak bu dizin için aktiv edildi',
+	drag_n_drop_disabled: 'Taşı & Bırak bu dizin için geçici olarak devre dışı bırakıldı',
+	goto_page: 'Sayfaya Git',
+
+	'backend.disabled': 'Bu işlem serverda devre dışı bırakılmıştır.',
 	'backend.authorized': 'Bu işlemi gerçekleştirmek için yeterli yetkiye sahip deilsiniz.',
 	'backend.path': 'Belirtilen klasör mevcut değil. Site yöneticisine başvurun.',
 	'backend.exists': 'Belirtilen yer mevcut. Lütfen site yöneticinizle iletişim kurun',
@@ -51,18 +60,23 @@ FileManager.Language.tr = {
 	'backend.extension': 'Yüklemeye çalıştığınız dosya bilinmiyor yada yasak bir dosya uzantısına sahip.',
 	'backend.size': 'Yüklemek istediğiniz dosya boyutu sunucuda işlemek için çok büyük. Lütfen daha küçük boyutlara sahip bir dosya yüklemeyi deneyin.',
 	'backend.partial': 'Yüklemeye çalıştığınız dosya teknik nedenlerden dolayı yüklenemedi, lütfen tekrar yüklemeyi deneyin.',
-	'backend.nofile': 'Belirttiğiniz dosya bulunamıyor yada dosya mevcut değil.',
-	'backend.default': 'Dosya yükleme işlemi esnasında problem çıktı.',
-	
-	'backend.nonewfile': 'A new name for the file to be moved / copied is missing.',
-	'backend.corrupt_img': 'This file is a not a image or a corrupt file: ', // path
-	'backend.copy_failed': 'An error occurred while copying the file / directory: ', // oldlocalpath : newlocalpath
-	'backend.delete_thumbnail_failed': 'An error occurred when attempting to delete the image thumbnail',
-	'backend.mkdir_failed': 'An error occurred when attempting to create the directory: ', // path
-	'backend.move_failed': 'An error occurred while moving / renaming the file / directory: ', // oldlocalpath : newlocalpath
-	'backend.path_tampering': 'Path tampering detected.',
-	'backend.realpath_failed': 'Cannot translate the given file specification to a valid storage location: ', // $path
-	'backend.unlink_failed': 'Dosyayı / Klasörü silmeye çalışırken bir hata oluştu: ',  // path
+	'backend.nofile': 'Belirtilen dosya yok yada dosya mevcut değil.',
+	'backend.default': 'Dosya yüklenirken sorun çıktı.',
+	'backend.path_not_writable': 'Belirtilen yükleme klasöründe yazma izniniz yok.',
+	'backend.filename_maybe_too_large': 'Dosya ismi yada yolu sunucu dosya sistemi için çok uzun. Daha kısa bir dosya adıyla yeniden deneyin.',
+	'backend.fmt_not_allowed': 'Yükleme için bu dosya biçimi yada adında izin verilmiyor.',
+	'backend.unidentified_error': '(Sunucuda) Yönetim paneliyle iletişimde bilinmeyen bir hata oluştu.',
+
+	'backend.nonewfile': 'Dosya için yeni bir isimle taşınacak veya kopyalanacak',
+	'backend.corrupt_img': 'Bu dosya bir resim yada görüntülenebilir bir dosya değil: ', // path
+	'backend.resize_inerr': 'Bu dosya bir iç hata nedeniyle yeniden boyutlandırılamadı.',
+	'backend.copy_failed': 'Dosya yada Dizini kopyalama sırasında bir hata oluştu: ', // oldlocalpath : newlocalpath
+	'backend.delete_cache_entries_failed': '(Küçük Resim, Meta Bilgisi) Ön bellekten silmeye çalışırken bir hata meydana geldi.',
+	'backend.mkdir_failed': 'Dizin oluşturulurken bir hata meydana geldi: ', // path
+	'backend.move_failed': 'Dosya yada klasör Taşınırken yada Yeniden adlandırılırken bir hata meydana geldi: ', // oldlocalpath : newlocalpath
+	'backend.path_tampering': 'Yolun değiştiği tespit edildi.',
+	'backend.realpath_failed': 'Verilen dosya varsayılan saklama yoluna çevrilemedi: ', // $path
+	'backend.unlink_failed': 'Dosya veya klasörü silmeye çalışırken bir hata meydana geldi: ',  // path
 
 	// Image.class.php:
 	'backend.process_nofile': 'Görüntü işleme birimi üzerinde çalışmak için geçerli bir dosya konumu alamadı.',
@@ -88,6 +102,7 @@ FileManager.Language.tr = {
 		unknown: 'Bilinmeyen hata',
 		sizeLimitMin: 'Eklenemez "<em>${name}</em>" (${size}), Minimun dosya boyutu <strong>${size_min}</strong>!',
 		sizeLimitMax: 'Eklenemez "<em>${name}</em>" (${size}), dosya boyutu limiti <strong>${size_max}</strong>!'
+		mod_security: 'No response was given from the uploader, this may mean that "mod_security" is active on the server and one of the rules in mod_security has cancelled this request.  If you can not disable mod_security, you may need to use the NoFlash Uploader.'
 	},
 	
 	flash: {

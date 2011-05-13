@@ -486,6 +486,7 @@ $lang['ionize_title_thumbs_system'] =		'Ionize sistem küçük resmi';
 $lang['ionize_title_form_antispam_key'] = 'Antispam JS anahtarı';
 $lang['ionize_title_article_management'] = 'Makale Yönetimi';
 $lang['ionize_title_admin_url'] = 'Yönetim Paneli Yolu';
+$lang['ionize_title_encryption_key'] = 'Şifreleme Anahtarı';
 
 $lang['ionize_label_thumb_automatic'] = 'Otomatik';
 $lang['ionize_label_files_path'] =			'Medya ana dizini';
@@ -679,6 +680,7 @@ $lang['ionize_label_link'] =				'Bağlantı';
 $lang['ionize_label_description'] =			'Açıklama';
 $lang['ionize_label_reload_media_list'] =	"Medya Listesini Tekrar Yükle";
 $lang['ionize_label_media_container'] = 'Albüm / Serisi';
+$lang['ionize_label_media_crop_picture'] = 'Resmi Kes';
 
 $lang['ionize_message_please_save_first'] =		"Lütfen medya eklemeden önce kaydedin";
 $lang['ionize_message_media_not_authorized'] =	'Medya türü desteklenmiyor !';
@@ -924,3 +926,14 @@ $lang['ionize_message_module_uninstalled'] =					'Modül Kaldırıldı';
 $lang['ionize_message_module_not_installed'] =					'Modül Yüklenemedi !';
 
 
+/*
+|--------------------------------------------------------------------------
+| Admin : System Check
+|--------------------------------------------------------------------------
+*/
+$lang['ionize_title_system_check'] = 'Sistem Denetim Aracı';
+$lang['ionize_menu_system_check'] = 'Sistemi Kontrol Et';
+$lang['ionize_text_system_check'] = 'Bu araç Ionize bütünlüğünü ve onarımını kontrol etmek için kullanılı. Bu özelliği kullanarak hiçbirşey kıramazsınız.';
+
+$lang['ionize_label_start_system_check'] = 'Kontrolü Başlat';
+$lang['ionize_button_start_system_check'] = 'Kontrolü Başlat';

@@ -14,7 +14,7 @@ ION.append({
 		if ( ! $('mainPanel_headerToolbox')) {
 			this.panelHeaderToolboxEl = new Element('div', {
 				'id': 'mainPanel_headerToolbox',
-				'class': 'toolbar'
+				'class': 'buttonbar'
 			}).inject($('mainPanel_header'));
 		}
 	
@@ -22,9 +22,7 @@ ION.append({
 		{
 			cb = '';
 			if (onContentLoaded)
-			{
 				cb = onContentLoaded;
-			}
 		
 			MUI.Content.update({
 				element: 'mainPanel_headerToolbox',
@@ -76,17 +74,19 @@ ION.append({
 	 * @param	string 	HTMLElement ID
 	 *	
 	 */
-	initAccordion: function(togglers, elements, openAtStart) 
+	initAccordion: function(togglers, elements, openAtStart, cookieName) 
 	{
 		// Hack IE 7 : No Accordion
 		if (Browser.ie == true && Browser.version < 8)
 		{
 			return;
 		}
-		
-		
+		var cookieDays = 999;
 		var disp = (typeOf(openAtStart) != 'null') ? 0 : -1;
-	
+
+		if (cookieName)
+			disp = [Cookie.read(cookieName), disp].pick();
+			
 		var acc = new Fx.Accordion(togglers, elements, {
 			display: disp,
 			opacity: false,
@@ -94,6 +94,7 @@ ION.append({
 			initialDisplayFx: false,
 			onActive: function(toggler, element){
 				toggler.addClass('expand');
+				Cookie.write(cookieName, this.togglers.indexOf(toggler), {duration:this.options.cookieDays});
 			},
 			onBackground: function(toggler, element){
 				toggler.removeClass('expand');
@@ -199,13 +200,6 @@ ION.append({
 		options.url = admin_url + ION.cleanUrl(options.url);
 			
 		// If the panel doesn't exists, try to update directly one DomHTMLElement
-//		if ( ! MUI.Windows.instances.get(options.element) && ! MUI.Panels.instances.get(options.element))
-/*
-(MUI.instances).each(function(inst)
-{
-	console.log(inst.id);
-});
-*/
 		if ( ! MUI.get(options.element) )
 		{
 			new Request.HTML({
@@ -220,7 +214,6 @@ ION.append({
 			
 			// Update the Mocha UI panel with Core.updateContent() method
 			MUI.Content.update(options);
-//			updateContent(options);
 		}
 	},
 
@@ -294,10 +287,12 @@ ION.append({
 		}
 		else
 		{
+			var display_format = (date_format).replace(/%/g, '');
+			
 			ION.datePicker = new DatePicker('.date', {
 				pickerClass: 'datepicker_dashboard', 
 				timePicker:true, 
-				format: 'd.m.Y H:i:s', 
+				format: display_format + ' H:i:s', 
 				inputOutputFormat:'d.m.Y H:i:s', 
 				allowEmpty:true, 
 				useFadeInOut:false, 
@@ -329,6 +324,29 @@ ION.append({
 			new Tips(element + ' .help', {'className' : 'tooltip'});
 		}
 	},
+	
+	emptyDomElement: function(element)
+	{
+		if (typeOf(element) == 'string')
+			element = $(element);
+			
+		element.empty();
+	},
+	
+	appendDomElement: function(container, html)
+	{
+		var div = new Element('div');
+		div.set('html', html);
+
+		if (typeOf(container) == 'string')
+			container = $(container);
+
+		if (typeOf(html) == 'element')
+			container.adopt(html);
+		else
+			container.set('html', container.get('html') + html);
+	},
+
 
 	insertDomElement: function(container, where, html)
 	{
@@ -470,9 +488,9 @@ ION.append({
 					 * );
 					 *
 					 */
-					if (onDrop.contains(",") && this.dropClasses.length > 1)
+					if (onDrop.contains(',') && this.dropClasses.length > 1)
 					{
-						var onDrops = (onDrop).replace(' ','').split(",");
+						var onDrops = (onDrop).replace(' ','').split(',');
 						var index = false;
 						
 						// Search the method to execute.
@@ -481,9 +499,9 @@ ION.append({
 							cl = cl.replace('.', '');
 							if (droppable.hasClass(cl)) { index = idx;}
 						});
-						
 						if (typeOf(onDrops[index]) != 'null')
 						{
+//	alert(typeOf(element));
 							ION.execCallbacks({'fn':onDrops[index], 'args':[element, droppable, event] });
 						}
 					}
@@ -535,11 +553,10 @@ ION.append({
 	{
 		$$(selector).each(function(item, idx)
 		{
-//			item.removeEvents();
 			item.addEvent('click', function(e)
 			{
 				e.stop();
-				MUI.dataWindow(table + 'Help', 'Help', 'desktop/help/' + table + '/' + title, {resize:true});
+				ION.dataWindow(table + 'Help', 'Help', 'desktop/help/' + table + '/' + title, {resize:true});
 				return false;
 			});
 		});
@@ -814,8 +831,8 @@ ION.append({
 			{
 				var section = tab.retrieve('section');
 				
-				console.log(idx);
-				console.log(section.getChildren());
+//				console.log(idx);
+//				console.log(section.getChildren());
 				
 			});
 		}
@@ -862,15 +879,15 @@ ION.append({
 			
 			var a = new Element('a').set('html', text);
 		
-			// Title
-			var dt = new Element('dt', {'class': 'small'});
+			// Title (DT)
+			var dt = new Element('dt');
 			var label = new Element('label').set('text', Lang.get('ionize_label_linkto')); 
 			dt.adopt(label);
 			dt.inject(dl, 'top');
 	
 			// Icon & link
 			var dd = new Element('dd').inject(dl, 'bottom');
-			var span = new Element('span', {'class': 'link-img ' + type}).inject(label, 'bottom');
+			var span = new Element('span', {'class': 'link-img left ' + type}).inject(a, 'top');
 		
 			if (type == 'external')
 			{
@@ -925,7 +942,7 @@ ION.append({
 	{
 		articles.each(function(art)
 		{
-			var title = (art.title != '') ? art.title : art.url;
+			var title = (art.title != '') ? art.title : art.name;
 			var id = art.id_article;
 			
 			var rel = art.id_page + '.' + art.id_article;
@@ -1441,7 +1458,7 @@ ION.append({
 					'view' : this.value
 				};
 
- 				MUI.sendData(url, data);
+ 				ION.sendData(url, data);
 			}
 		});
 	},
@@ -1474,10 +1491,44 @@ ION.append({
 					'id_type': this.value
 				};
 
- 				MUI.sendData(url, data);
+ 				ION.sendData(url, data);
 			}
 		});
 	},
+	
+	initArticleMainParentEvent: function(item)
+	{
+		var rel = item.getAttribute('rel').split(".");
+
+		if (item.value != '0' && item.value != '') { item.addClass('a'); }
+
+		// Some safety before adding the event.
+		item.removeEvents('change');
+
+		item.addEvents({
+		
+			'change': function(e)
+			{
+				e.stop();
+			 	
+				var url = admin_url + 'article/save_main_parent';
+				
+				this.removeClass('a');
+				
+				if (this.value != '0' && this.value != '') { this.addClass('a'); }
+				
+				var data = {
+					'id_page': this.value,
+					'id_article': rel[1]
+				};
+
+ 				ION.sendData(url, data);
+			}
+		});
+	},
+	
+	
+	
 	
 	
 	initPageStatusEvent: function(item)
@@ -1665,7 +1716,7 @@ ION.append({
 	 */
 	dropArticleInPage: function(element, droppable, event)
 	{
-		var rel = (element.getProperty('rel')).split(".");
+		var rel = (element.rel).split('.');
 		var id_page_origin = rel[0];
 		var id_article = rel[1];
 		var id_page = droppable.getProperty('rel');
@@ -1759,6 +1810,8 @@ ION.append({
 		}
 		else
 		{
+			var title = element.getProperty('title');
+		
 			new Request.JSON({
 				url: admin_url + receiver_type + '/add_link',
 				method: 'post',
@@ -1771,8 +1824,13 @@ ION.append({
 				onSuccess: function(responseJSON, responseText)
 				{
 					// Set the link title to the textarea
-					droppable.getElement('textarea').set('html', element.getProperty('title'));
+					var linkTextarea = droppable.getElement('textarea');
 
+					if (Browser.ie7)
+						linkTextarea.set('text', title);
+					else
+						linkTextarea.set('html', title);
+					
 					ION.notification('success', Lang.get('ionize_message_operation_ok'));
 
 					// JS Callback
@@ -2059,7 +2117,6 @@ ION.append({
 		text = text.replace(/ç/g, 'c');
 		text = text.replace(/ş/g, 's');
 		text = text.replace(/ı/g, 'i');
-		text = text.replace(/i/g, 'i');
 		text = text.replace(/ğ/g, 'g');
 
 		var str = '';
