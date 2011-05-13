@@ -3,29 +3,29 @@
 /*
 |--------------------------------------------------------------------------
 | Ionize Language file
-| Language : Turkish
-| Translater : Ukyo, 27 04 2011
+| Language : English
+| Translater : Guardian, 13th Sept 2010
 |
-| Kullanımı :
-| Form Etiketleri :					ionize_label_*
-| Form Tuşları :					ionize_button_*
-| Menü Öğeleri :					ionize_menu_*
-| Sayfa Başlıkları , Başlıklar :	ionize_title_*
-| Mesajlar :						ionize_message_*
-|									ionize_*_message_*
-| Tebliğ :							ionize_notify_*
-|									ionize_*_notify_*
-| Yardım (inline) :					ionize_help_*
+| Usage :
+| Form labels :				ionize_label_*
+| Form buttons :			ionize_button_*
+| Menu items :				ionize_menu_*
+| Page titles, titles :		ionize_title_*
+| Messages :				ionize_message_*
+|							ionize_*_message_*
+| Notification :			ionize_notify_*
+|							ionize_*_notify_*
+| Help (inline) :			ionize_help_*
 |
-| Notlar : 	Modül çevirileri öğeleri 'module_name' önekiyle başlayabilir
-|			Örnek :
-|			$lang['module_fancyupload_label_folder'] =			'Hedef Klasör';
+| Notes : 	Modules translation items should begin with the prefix 'module_name'
+|			Example :
+|			$lang['module_fancyupload_label_folder'] = 		'Destination folder';
 |
-| Etiket Dökümantasyou :	Her etiket bir "başlık" özelliği içerebilir
-| 							Başlık özelliği değeri kullanıcıların anlamasına yardımcı olacaktır
-|							Örnek : 
-|							Etiket : 			$lang['ionize_label_appears'] = 		'Menüde Görünsün';
-|							Etiket Başlığı : 	$lang['ionize_help_appears'] = 			'Öğe Navigasyonda Görünür Olacak';
+| Label documentation :	Each label should have a "title" attribute set
+| 						The title attribute value helps the user to understand what use he can made from a field
+|						Example : 
+|						Label : $lang['ionize_label_appears'] = 'Appears in nav';
+|						Label title : $lang['ionize_help_appears'] = 'The item will be visible in the navigation';
 |
 |--------------------------------------------------------------------------
 */
@@ -36,19 +36,18 @@
 | Admin login panel
 |--------------------------------------------------------------------------
 */
-$lang['ionize_admin_title'] = 'Yönetim Paneli';
-$lang['ionize_home'] =				'Ana Sayfa';
-$lang['ionize_login'] =				'Giriş Yap';
-$lang['ionize_logout'] =			'Çıkış Yap';
-$lang['ionize_goback'] =			'Yönetim Paneline Git';
-$lang['ionize_website'] =			'Ön Sayfaya Gözat';
-$lang['ionize_logged_as'] =			'Giriş yapıldı';
-$lang['ionize_login_name'] =		"Kullanıcı Adı";
-$lang['ionize_login_password'] =	'Şifre';
-$lang['ionize_login_remember'] =	'Beni Hatırla';
-$lang['ionize_login'] =				'Giriş';
-$lang['ionize_forgot_password'] =	'Şifremi Unuttum ?';
-$lang['ionize_session_expired'] = 'Oturumunuz zaman aşımına uğradı. Lütfen tekrar giriş yapın.';
+$lang['ionize_home'] = 'Home';
+$lang['ionize_login'] = 'Login';
+$lang['ionize_logout'] = 'Logout';
+$lang['ionize_goback'] = 'Back to website';
+$lang['ionize_website'] = 'See the website';
+$lang['ionize_logged_as'] = 'Logged as';
+$lang['ionize_login_name'] = 'User name';
+$lang['ionize_login_password'] = 'Password';
+$lang['ionize_login_remember'] = 'Remember me';
+$lang['ionize_login'] = 'Login';
+$lang['ionize_forgot_password'] = 'Forgotten password ?';
+$lang['ionize_session_expired'] = 'Your session has expired. Please log in again.';
 
 
 /*
@@ -56,30 +55,31 @@ $lang['ionize_session_expired'] = 'Oturumunuz zaman aşımına uğradı. Lütfen
 | Dashboard
 |--------------------------------------------------------------------------
 */
-$lang['ionize_dashboard_icon_add_page'] =		'Yeni Sayfa';
-$lang['ionize_dashboard_icon_mediamanager'] =	'Medyalar';
-$lang['ionize_dashboard_icon_translation'] =	'Çeviriler';
-$lang['ionize_dashboard_icon_google_analytics'] =	'Analytics';
-$lang['ionize_dashboard_icon_articles'] = 'Makaleler';
+$lang['ionize_dashboard_icon_add_page'] = 'New page';
+$lang['ionize_dashboard_icon_mediamanager'] = 'Medias';
+$lang['ionize_dashboard_icon_translation'] = 'Translations';
+$lang['ionize_dashboard_icon_google_analytics'] = 'Analytics';
+$lang['ionize_dashboard_icon_articles'] = 'Articles';
 
-$lang['ionize_dashboard_title_content'] =		'İçerik';
-$lang['ionize_dashboard_title_tools'] =			'Araçlar';
-$lang['ionize_dashboard_title_settings'] =		'Ayarlar';
+$lang['ionize_dashboard_title_content'] = 'Content';
+$lang['ionize_dashboard_title_tools'] = 'Tools';
+$lang['ionize_dashboard_title_settings'] = 'Settings';
 
-$lang['ionize_dashboard_title_last_modified_articles'] = 'Son Güncellenen Makaleler';
-$lang['ionize_dashboard_title_last_connected_users'] =	'Son Bağlanan Kullanıcılar';
-$lang['ionize_dashboard_title_last_registered_users'] = 'Son Kayıt Olan Kullanıcılar';
-$lang['ionize_dashboard_title_orphan_pages'] = 'Orphan Sayfaları';
-$lang['ionize_dashboard_title_orphan_articles'] = 'Yetim makaleler';
+$lang['ionize_dashboard_title_last_modified_articles'] = 'Last updated articles';
+$lang['ionize_dashboard_title_last_connected_users'] = 'Last connected users';
+$lang['ionize_dashboard_title_last_registered_users'] = 'Last registered users';
+$lang['ionize_dashboard_title_orphan_pages'] = 'Orphan pages';
+$lang['ionize_dashboard_title_orphan_articles'] = 'Orphan articles';
+
 
 /*
 |--------------------------------------------------------------------------
-| Yapı
+| Structure
 |--------------------------------------------------------------------------
 */
-$lang['ionize_structure_main_menu'] = 'Ana Menü';
-$lang['ionize_structure_system_menu'] = 'Sistem içeriği';
-$lang['ionize_button_toggle_header'] = 'Çubuk başlığı';
+$lang['ionize_structure_main_menu'] = 'Main menu';
+$lang['ionize_structure_system_menu'] = 'System content';
+$lang['ionize_button_toggle_header'] = 'Toggle header';
 
 
 /*
@@ -87,76 +87,76 @@ $lang['ionize_button_toggle_header'] = 'Çubuk başlığı';
 | Admin navigation menu
 |--------------------------------------------------------------------------
 */
-$lang['ionize_menu_dashboard'] = 'Panel';
-$lang['ionize_menu_google_analytics'] = 'Google Analytics';
-$lang['ionize_menu_content'] =				'İçerik';
-$lang['ionize_menu_articles'] = 'Makaleler';
-$lang['ionize_menu_translation'] =			'Çeviriler';
-$lang['ionize_menu_modules'] =				'Modüller';
-$lang['ionize_menu_tools'] =				'Araçlar';
-$lang['ionize_menu_settings'] =				'Ayarlar';
-$lang['ionize_menu_help'] =					'Yardım';
+$lang['ionize_menu_dashboard'] = 'Dashboard';
+$lang['ionize_menu_content'] = 'Content';
+$lang['ionize_menu_articles'] = 'Articles';
+$lang['ionize_menu_translation'] = 'Translations';
+$lang['ionize_menu_modules'] = 'Modules';
+$lang['ionize_menu_tools'] = 'Tools';
+$lang['ionize_menu_settings'] = 'Settings';
+$lang['ionize_menu_help'] = 'Help';
 
-$lang['ionize_menu_menu'] = 'Menüleri yönet...';
-$lang['ionize_menu_page'] =					'Sayfa oluştur...';
-$lang['ionize_menu_article'] =				'Makale Oluştur...';
-$lang['ionize_menu_media_manager'] =		'Medya yöneticisi';
+$lang['ionize_menu_menu'] = 'Manage menus...';
+$lang['ionize_menu_page'] = 'Create page...';
+$lang['ionize_menu_article'] = 'Create article...';
+$lang['ionize_menu_media_manager'] = 'Media manager';
 
-$lang['ionize_menu_modules_admin'] =		'Yönetim...';
+$lang['ionize_menu_modules_admin'] = 'Administration...';
 
-$lang['ionize_menu_site_settings'] =		'Site Ayarları...';
-$lang['ionize_menu_global'] =				'Genel...';
-$lang['ionize_menu_theme'] =				'Tema...';
-$lang['ionize_menu_technical_settings'] =	'Gelişmiş Ayarlar...';
-$lang['ionize_menu_translations'] =			'Statik Çeviri';
+$lang['ionize_menu_site_settings'] = 'Website settings...';
+$lang['ionize_menu_global'] = 'Global...';
+$lang['ionize_menu_theme'] = 'Theme...';
+$lang['ionize_menu_technical_settings'] = 'Advanced settings...';
+$lang['ionize_menu_translations'] = 'Static translation';
 
-$lang['ionize_menu_site_settings_global'] =			'Site Ayarları';
-$lang['ionize_menu_site_settings_translations'] =	'Statik Çeviri';
-$lang['ionize_menu_site_settings_technical'] =		'Gelişmiş Ayarlar';
-$lang['ionize_menu_ionize_settings'] = 'Ionize Arayüzü';
+$lang['ionize_menu_site_settings_global'] = 'Website settings';
+$lang['ionize_menu_site_settings_translations'] = 'Static translation';
+$lang['ionize_menu_site_settings_technical'] = 'Advanced settings';
+$lang['ionize_menu_ionize_settings'] = 'Ionize interface';
 
-$lang['ionize_menu_users'] =			'Kullanıcılar...';
-$lang['ionize_menu_languages'] =		'Diller...';
+$lang['ionize_menu_users'] = 'Users...';
+$lang['ionize_menu_languages'] = 'Languages...';
 
-$lang['ionize_menu_about'] =			'Hakkında';
-$lang['ionize_menu_documentation'] =	'Dökümantasyon';
-$lang['ionize_menu_extend_fields'] =	'Genişletilmiş Alanlar';
-$lang['ionize_menu_content_elements'] = 'İçerik Öğeleri';
+$lang['ionize_menu_about'] = 'About';
+$lang['ionize_menu_documentation'] = 'Documentation';
+$lang['ionize_menu_extend_fields'] = 'Extend Fields';
+$lang['ionize_menu_content_elements'] = 'Content Elements';
 
 
 /*
 |--------------------------------------------------------------------------
-| Genel Başlıklar
+| Global titles
 |--------------------------------------------------------------------------
 */
-$lang['ionize_title_welcome'] =				'Ionize\'ye Hoş Geldiniz';
-$lang['ionize_title_structure'] =			'Yapı';
-$lang['ionize_title_options'] =				'Ayarlar';
-$lang['ionize_title_advanced'] =			'Gelişmiş Ayarlar';
-$lang['ionize_title_dates'] =				'Tarihler';
-$lang['ionize_title_informations'] =		'Bilgi';
-$lang['ionize_title_authorization'] =		"Erişim Yetkileri";
-$lang['ionize_title_metas'] =				"Anahtar Kelimeler";
-$lang['ionize_title_modules'] =				"Modül Yönetimi";
-$lang['ionize_title_menu'] = 'Menü yönetimi';
-$lang['ionize_title_documentation'] = 'Dökümantasyon';
-$lang['ionize_title_ionize_settings'] = 'Ionize Arayüzü';
-$lang['ionize_title_help'] = 'Yardım';
-$lang['title_delete_installer'] =			"INSTALL Klasörünü silin";
-$lang['title_ionize_installation'] = 		'Ionize Yükleyici';
+$lang['ionize_title_welcome'] = 'Welcome to Ionize';
+$lang['ionize_title_structure'] = 'Structure';
+$lang['ionize_title_options'] = 'Options';
+$lang['ionize_title_advanced'] = 'Advanced options';
+$lang['ionize_title_dates'] = 'Dates';
+$lang['ionize_title_informations'] = 'Information';
+$lang['ionize_title_authorization'] = 'Access authorizations';
+$lang['ionize_title_metas'] = 'Metas';
+$lang['ionize_title_modules'] = 'Module management';
+$lang['ionize_title_menu'] = 'Menu management';
+$lang['ionize_title_documentation'] = 'Documentation';
+$lang['ionize_title_ionize_settings'] = 'Ionize interface';
+$lang['ionize_title_help'] = 'Help';
 
-$lang['ionize_title_site_settings'] = 'Site Ayarları';
-$lang['ionize_title_technical_settings'] = 'Gelişmiş Ayarlar';
+$lang['title_delete_installer'] = 'Delete the INSTALL folder';
+$lang['title_ionize_installation'] = 'Ionize Installation';
+
+$lang['ionize_title_site_settings'] = 'Website settings';
+$lang['ionize_title_technical_settings'] = 'Advanced  settings';
 
 /*
 |--------------------------------------------------------------------------
 | Modal windows
 |--------------------------------------------------------------------------
 */
-$lang['ionize_modal_confirmation_title'] =	'Onaylıyormusun ?';
-$lang['ionize_modal_information_title'] = 'Bilgi';
-$lang['ionize_modal_alert_title'] = 'Uyarı';
-$lang['ionize_modal_error_title'] = 'Hata';
+$lang['ionize_modal_confirmation_title'] = 'Do you confirm ?';
+$lang['ionize_modal_information_title'] = 'Information';
+$lang['ionize_modal_alert_title'] = 'Alert';
+$lang['ionize_modal_error_title'] = 'Error';
 
 
 /*
@@ -164,17 +164,17 @@ $lang['ionize_modal_error_title'] = 'Hata';
 | Menus 
 |--------------------------------------------------------------------------
 */
-$lang['ionize_title_add_menu'] = 'Menü Ekle';
-$lang['ionize_button_save_new_menu'] = 'Menüyü Kaydet';
+$lang['ionize_title_add_menu'] = 'Add menu';
+$lang['ionize_button_save_new_menu'] = 'Save Menu';
 
-$lang['ionize_title_existing_menu'] = 'Varolan Menü';
-$lang['ionize_message_menu_saved'] = 'Menü Kaydedildi';
-$lang['ionize_message_menu_not_saved'] = 'Menü Kaydedilemedi';
-$lang['ionize_message_menu_already_exists'] = 'Böyle Bir Menü Zaten Var';
-$lang['ionize_message_menu_updated'] = 'Menü Güncellendi';
-$lang['ionize_message_menu_ordered'] = 'Menü Sıralandı';
-$lang['ionize_message_menu_deleted'] = 'Menü Silindi';
-$lang['ionize_message_menu_not_deleted'] = 'Menü Silinmedi';
+$lang['ionize_title_existing_menu'] = 'Existing menu';
+$lang['ionize_message_menu_saved'] = 'Menu saved';
+$lang['ionize_message_menu_not_saved'] = 'Menu not saved';
+$lang['ionize_message_menu_already_exists'] = 'This menu already exists';
+$lang['ionize_message_menu_updated'] = 'Menu updated';
+$lang['ionize_message_menu_ordered'] = 'Menus ordered';
+$lang['ionize_message_menu_deleted'] = 'Menu deleted';
+$lang['ionize_message_menu_not_deleted'] = 'Menu not deleted';
 
 
 /*
@@ -182,538 +182,558 @@ $lang['ionize_message_menu_not_deleted'] = 'Menü Silinmedi';
 | Content Elements 
 |--------------------------------------------------------------------------
 */
-$lang['ionize_button_save_element'] = 'Öğeyi Kaydet';
+$lang['ionize_button_save_element'] = 'Save this Element';
 
-$lang['ionize_title_content_element_list'] = 'İçerik Öğeleri';
-$lang['ionize_title_add_content_element'] = 'Element Ekle';
-$lang['ionize_title_edit_content_element'] = 'Elementi Düzenle';
-$lang['ionize_title_element_edit'] = 'Elementi Düzenle';
-$lang['ionize_title_element_new'] = 'Yeni İçerik Elementi';
-$lang['ionize_title_element_field_edit'] = 'İçerik Elementini Düzenle';
+$lang['ionize_title_content_element_list'] = 'Content Elements';
+$lang['ionize_title_add_content_element'] = 'Add Element';
+$lang['ionize_title_edit_content_element'] = 'Edit Element';
+$lang['ionize_title_element_edit'] = 'Edit Element';
+$lang['ionize_title_element_new'] = 'New Content Element';
+$lang['ionize_title_element_field_edit'] = 'Edit Content Element';
 
-$lang['ionize_title_element_fields'] = 'Alanlar';
+$lang['ionize_title_element_fields'] = 'Fields';
 
-$lang['ionize_label_element_set_name'] = 'İsmi kaydet';
-$lang['ionize_label_content_element'] = 'İçerik Elementi';
-$lang['ionize_label_add_content_element'] = 'Element Ekle';
-$lang['ionize_label_back_to_element_list'] = 'Elementlere Geri Dön';
-$lang['ionize_label_see_element_detail'] = 'Element Detayları...';
+$lang['ionize_label_element_set_name'] = 'Save name';
+$lang['ionize_label_content_element'] = 'Content Element';
+$lang['ionize_label_add_content_element'] = 'Add Element';
+$lang['ionize_label_back_to_element_list'] = 'Back to Elements';
+$lang['ionize_label_see_element_detail'] = 'Element details...';
 
 
 
-$lang['ionize_message_content_element_name_saved'] = 'Yeni İsim Kaydedildi';
-$lang['ionize_message_content_element_saved'] = 'İçerik Elementi Kaydedildi';
-$lang['ionize_message_content_element_not_saved'] = 'İçerik Elementi Kaydedilemedi';
-$lang['ionize_message_delete_element_definition'] = 'Bu içerik elementi tanımını sil ?';
-$lang['ionize_message_element_ordered'] = 'Element Sıralandı';
-$lang['ionize_message_element_copied'] = 'Element kapyalandı !';
-$lang['ionize_message_element_moved'] = 'Element taşındı !';
+$lang['ionize_message_content_element_name_saved'] = 'New name saved';
+$lang['ionize_message_content_element_saved'] = 'Content Element saved';
+$lang['ionize_message_content_element_not_saved'] = 'Content Element not saved';
+$lang['ionize_message_delete_element_definition'] = 'Delete this content definition ?';
+$lang['ionize_message_element_ordered'] = 'Elements ordered';
+$lang['ionize_message_element_copied'] = 'Element copied !';
+$lang['ionize_message_element_moved'] = 'Element moved !';
 
-$lang['ionize_label_create_element'] = 'Element Oluştur';
-$lang['ionize_message_element_field_deleted'] = 'Element Alanı Silindi';
-$lang['ionize_message_element_field_not_deleted'] = 'Element Alanı Silinemedi';
-$lang['ionize_message_element_field_saved'] = 'İçerik Elementi Kaydedildi';
-$lang['ionize_message_element_field_not_saved'] = 'İçerik Elementi Kaydedilemedi';
-$lang['ionize_message_element_in_use'] = 'Bu elementin alanları veya element kullanımda ve silinemez.';
-$lang['ionize_message_element_cannot_be_added_to_parent'] = 'Bu element alt öğe olarak eklenemez !';
-$lang['ionize_message_element_definition_name_already_exists'] = 'Aynı isme sahip başka bir element kayıtlı !';
+$lang['ionize_label_create_element'] = 'Create Element';
+$lang['ionize_message_element_field_deleted'] = 'Element field deleted';
+$lang['ionize_message_element_field_not_deleted'] = 'Element field not deleted';
+$lang['ionize_message_element_field_saved'] = 'Content Element saved';
+$lang['ionize_message_element_field_not_saved'] = 'Content Element not saved';
+$lang['ionize_message_element_in_use'] = 'This element has fields or is in use and can\'t be deleted.';
+$lang['ionize_message_element_cannot_be_added_to_parent'] = 'This element can\'t be added to this parent !';
+$lang['ionize_message_element_definition_name_already_exists'] = 'Another Element has already this name !';
 
-$lang['ionize_title_element_field_new'] = 'Yeni Element Alanı';
-$lang['ionize_message_element_field_name_exists'] = 'Var olan bir alan eklemeye çalışıyorsunuz !';
+$lang['ionize_title_element_field_new'] = 'New Element field';
+$lang['ionize_message_element_field_name_exists'] = 'This field already exists !';
+
 
 /*
+|--------------------------------------------------------------------------
 | Global forms labels & help
 | Labels are also commonly used for table head column titles
 |--------------------------------------------------------------------------
 */
 
-$lang['ionize_label_change'] = 'Değiştir';
-$lang['ionize_label_multilingual'] = 'Çokludil';
-$lang['ionize_label_internal_id'] = 'İç Kimlik';
-$lang['ionize_label_online'] =		'Yayında';
-$lang['ionize_label_offline'] =		'Yayında Değil';
-$lang['ionize_label_set_offline'] =	'Yayınlama';
-$lang['ionize_label_set_online'] =	'Yayınla';
-$lang['ionize_label_edit'] =		'Düzenle';
-$lang['ionize_label_delete'] =		'Sil';
-$lang['ionize_label_unlink'] = 'Linki Kaldır';
-$lang['ionize_label_status'] =		'Durum';
-$lang['ionize_label_max_upload_size'] =	'En Fazla Yükleme Boyutu?';
-$lang['ionize_label_file_uploads'] =	'Yükle ?';
-$lang['ionize_label_site_email'] =		'E-Posta Site';
-$lang['ionize_label_linkto'] = 'Bağla...';
-$lang['ionize_label_drop_link_here'] = 'bağlantıyı buraya bırak...';
-$lang['ionize_label_drop_page_here'] = 'sayfayı buraya bırak...';
-$lang['ionize_label_drop_article_here'] = 'makaleyi buraya bırak...';
-$lang['ionize_label_remove_link'] = 'Bağlantıyı sil';
+$lang['ionize_label_change'] = 'Change';
+$lang['ionize_label_multilingual'] = 'Mutilingual';
+$lang['ionize_label_internal_id'] = 'Internal ID';
+$lang['ionize_label_online'] = 'Online';
+$lang['ionize_label_offline'] = 'Offline';
+$lang['ionize_label_set_offline'] = 'Set Offline';
+$lang['ionize_label_set_online'] = 'Set Online';
+$lang['ionize_label_edit'] = 'Edit';
+$lang['ionize_label_delete'] = 'Delete';
+$lang['ionize_label_unlink'] = 'Unlink';
+$lang['ionize_label_status'] = 'Status';
+$lang['ionize_label_max_upload_size'] = 'Max Upload';
+$lang['ionize_label_file_uploads'] = 'Upload ?';
+$lang['ionize_label_site_email'] = 'Email site';
+$lang['ionize_label_linkto'] = 'Link to...';
+$lang['ionize_label_drop_link_here'] = 'drop a link here...';
+$lang['ionize_label_drop_page_here'] = 'drop a page here...';
+$lang['ionize_label_drop_article_here'] = 'drop an article here...';
+$lang['ionize_label_remove_link'] = 'Remove link';
 $lang['ionize_label_url'] = 'URL';
-$lang['ionize_label_see_online'] = 'Yayında Gör';
-$lang['ionize_label_flag'] = 'İşaretleyici';
-$lang['ionize_label_flags'] = 'İşaretleyiciler';
-$lang['ionize_label_edit_flags'] = 'İşaretleyiciyi düzenle';
+$lang['ionize_label_see_online'] = 'See online';
+$lang['ionize_label_flag'] = 'Flag';
+$lang['ionize_label_flags'] = 'Flags';
+$lang['ionize_label_edit_flags'] = 'Edit flags';
 
-$lang['ionize_label_page'] = 'Sayfa';
-$lang['ionize_label_article'] = 'Makale';
-$lang['ionize_label_media'] = 'Medya';
-$lang['ionize_label_users'] = 'Kullanıcılar';
-$lang['ionize_label_user'] = 'Kullanıcı';
-$lang['ionize_label_table'] = 'Tablo';
+$lang['ionize_label_page'] = 'Page';
+$lang['ionize_label_article'] = 'Article';
+$lang['ionize_label_media'] = 'Media';
+$lang['ionize_label_users'] = 'Users';
+$lang['ionize_label_user'] = 'User';
+$lang['ionize_label_table'] = 'Table';
 
-$lang['ionize_label_name'] =				'İsim';
-$lang['ionize_label_id'] =					'ID';
-$lang['ionize_label_parent'] =				'Ana / Kaynak';
-$lang['ionize_label_permanent_url'] =		'Kalıcı URL';
-$lang['ionize_label_view'] = 'Görünüm';
-$lang['ionize_label_article_template'] =		'Makale Görünümü';
+$lang['ionize_label_name'] = 'Name';
+$lang['ionize_label_id'] = 'ID';
+$lang['ionize_label_parent'] = 'Parent';
+$lang['ionize_label_permanent_url'] = 'Permanent URL';
+$lang['ionize_label_view'] = 'View';
+$lang['ionize_label_article_template'] = 'Articles view';
 
-$lang['ionize_label_title'] =		'Başlık';
-$lang['ionize_label_subtitle'] =	'Alt Başlık';
-$lang['ionize_label_meta_title'] =	'Pencere Başlığı'; 
-$lang['ionize_label_text'] =		'Metin';
-$lang['ionize_label_content'] =		'İçerik';
-$lang['ionize_label_category'] =	'Kategori';
-$lang['ionize_label_ordering'] =	'Sıralama';
-$lang['ionize_label_pictures'] =	'Resim';
-$lang['ionize_label_music'] =		'Müzik';
-$lang['ionize_label_videos'] =		'Video';
-$lang['ionize_label_files'] =		'Dosya';
-$lang['ionize_label_default'] =		'Varsayılan';
-$lang['ionize_label_code'] =		'Kod';
-$lang['ionize_label_toggle_editor'] =	'Göster / Gizle HTML';
+$lang['ionize_label_title'] = 'Title';
+$lang['ionize_label_subtitle'] = 'Subtitle';
+$lang['ionize_label_meta_title'] = 'Window title';
+$lang['ionize_label_text'] = 'Text';
+$lang['ionize_label_content'] = 'Content';
+$lang['ionize_label_category'] = 'Category';
+$lang['ionize_label_ordering'] = 'Order';
+$lang['ionize_label_pictures'] = 'Images';
+$lang['ionize_label_music'] = 'Music';
+$lang['ionize_label_videos'] = 'Videos';
+$lang['ionize_label_files'] = 'Files';
+$lang['ionize_label_default'] = 'Default';
+$lang['ionize_label_code'] = 'Code';
+$lang['ionize_label_toggle_editor'] = 'toggle editor';
 
-$lang['ionize_label_in_menu'] =			'Menüde görünüyor';
-$lang['ionize_label_parent'] =			'Ana / Kaynak';
-$lang['ionize_label_meta_keywords'] =	'Anahtar Kelimeler';
-$lang['ionize_label_meta_description']= 'Açıklama';
-$lang['ionize_label_created'] =			'Oluşturulma Tarihi';
-$lang['ionize_label_updated'] =			'Güncelleme Tarihi';
-$lang['ionize_label_publish_on'] =		'Yayınla';
-$lang['ionize_label_publish_off'] =		'Yayınlama';
-$lang['ionize_label_permanent_url'] =	'Kalıcı URL';
-$lang['ionize_label_add_media'] =		'Medya Ekle';
-$lang['ionize_label_author'] = 'Yazar';
-$lang['ionize_label_updater'] = 'Güncelleyen';
+$lang['ionize_label_in_menu'] = 'Appears in menu';
+$lang['ionize_label_parent'] = 'Parent';
+$lang['ionize_label_meta_keywords'] = 'Keywords';
+$lang['ionize_label_meta_description']= 'Description';
+$lang['ionize_label_created'] = 'Creation date';
+$lang['ionize_label_updated'] = 'Update date';
+$lang['ionize_label_publish_on'] = 'Publish';
+$lang['ionize_label_publish_off'] = 'Unpublish';
+$lang['ionize_label_permanent_url'] = 'Permanent URL';
+$lang['ionize_label_add_media'] = 'Add media';
+$lang['ionize_label_author'] = 'Author';
+$lang['ionize_label_updater'] = 'Updater';
 
-$lang['ionize_label_groups'] =			'Gruplar';
+$lang['ionize_label_groups'] = 'Groups';
 
-$lang['ionize_label_installed'] =			'Yüklendi';
-$lang['ionize_label_hide_options'] =		'Ayarları Gizle';
-$lang['ionize_label_show_options'] = 'Ayarları Göster';
+$lang['ionize_label_installed'] = 'Installed';
+$lang['ionize_label_hide_options'] = 'Hide Options';
+$lang['ionize_label_show_options'] = 'Show Options';
 
-$lang['ionize_label_copy_to_other_languages'] = 'Diğer dillere kopyala';
-$lang['ionize_help_status'] =			'Yönetici olarak bağlı iseniz, Bağlantıyı sonlandırana kadar bu elementi göreceksiniz';
-$lang['ionize_help_online'] = 'Bu element genel olarak online mı?';
-$lang['ionize_help_online_lang'] =		"Bu dil için bu öğe yayınlansın mı ?";
-$lang['ionize_help_publish_on'] = 		'Öğeyi belirtilen tarihte yayınla ve görüntülenen öğe tarihiyle değiştir';
-$lang['ionize_help_publish_off'] = 		'Belirtilen tarihte öğeyi yayından kaldır';
-$lang['ionize_help_url'] = 'Element URL\'si';
-$lang['ionize_help_flag'] = 'İç işaretleyici organize edildi.';
-$lang['ionize_help_flags'] = 'İç işaretleyiciler, henüz organize edildi.';
-$lang['ionize_help_help'] = 'Yardım ipuçlarını şu anda okuduğum gibi görüntüle, yada görüntüleme';
-$lang['ionize_help_copy_to_other_languages'] = 'Diğer dillere kopyala';
+$lang['ionize_label_copy_to_other_languages'] = 'Copy to other languages';
+
+$lang['ionize_help_status'] = 'If connected as admin, you will see this element on the website even it is not online';
+$lang['ionize_help_online'] = 'Is this element globally online?';
+$lang['ionize_help_online_lang'] = 'Is this translation online for this language?';
+$lang['ionize_help_publish_on'] = 'Publish the item at this date and replace the displayed item date';
+$lang['ionize_help_publish_off'] = 'Unpublish the item at this date';
+$lang['ionize_help_url'] = 'Element URL';
+$lang['ionize_help_flag'] = 'An internal marked, just to be organized.';
+$lang['ionize_help_flags'] = 'Internal markers, just to be organized.';
+$lang['ionize_help_help'] = 'Displays the help tooltips like the one you\'re currently reading. Or not.. :-)';
+$lang['ionize_help_copy_to_other_languages'] = 'Copy to other languages';
+
 
 /*
 |--------------------------------------------------------------------------
 | Global forms buttons
 |--------------------------------------------------------------------------
 */
-$lang['ionize_button_save'] =		'Kaydet';
-$lang['ionize_button_save_close'] =	'Kaydet & Kapat';
-$lang['ionize_button_send'] =		'Gönder';
-$lang['ionize_button_next'] =		'İleri';
-$lang['ionize_button_delete'] =		'Sil';
-$lang['ionize_button_new'] =		'Yeni';
-$lang['ionize_button_close'] =		'Kapat';
-$lang['ionize_button_yes'] =		'Evet';
-$lang['ionize_button_no'] =			'Hayır';
-$lang['ionize_button_ok'] = 'Tamam';
-$lang['ionize_button_confirm'] =	'Onayla';
-$lang['ionize_button_cancel'] =		'İptal';
-$lang['ionize_button_add_page'] =	'Sayfa Ekle';
-$lang['ionize_button_switch_online'] =	'Bağlı / Bağlı Değil';
-$lang['ionize_button_filter'] = 'Filtrele';
+$lang['ionize_button_save'] = 'Save';
+$lang['ionize_button_save_close'] = 'Save & close';
+$lang['ionize_button_send'] = 'Send';
+$lang['ionize_button_next'] = 'Next';
+$lang['ionize_button_delete'] = 'Delete';
+$lang['ionize_button_new'] = 'New';
+$lang['ionize_button_close'] = 'Close';
+$lang['ionize_button_yes'] = 'Yes';
+$lang['ionize_button_no'] = 'No';
+$lang['ionize_button_ok'] = 'OK';
+$lang['ionize_button_confirm'] = 'Confirm';
+$lang['ionize_button_cancel'] = 'Cancel';
+$lang['ionize_button_add_page'] = 'Add page';
+$lang['ionize_button_switch_online'] = 'Online / Offline';
+$lang['ionize_button_filter'] = 'Filter';
 
-$lang['ionize_button_save_new_lang'] = 'Bu dili ekle';
-$lang['ionize_button_save_page'] = 'Sayfayı Kaydet';
-$lang['ionize_button_save_article'] = 'Makaleyi Kaydet';
-$lang['ionize_button_save_module_settings'] = 'Ayarları Kaydet';
-$lang['ionize_button_save_views'] = 'Görünümü Kaydet';
-$lang['ionize_button_save_themes'] = 'Bu Temaları Kullan';
-$lang['ionize_button_save_settings'] = 'Ayarları Kaydet';
+$lang['ionize_button_save_new_lang'] = 'Add this language';
+$lang['ionize_button_save_page'] = 'Save page';
+$lang['ionize_button_save_article'] = 'Save article';
+$lang['ionize_button_save_module_settings'] = 'Save settings';
+$lang['ionize_button_save_views'] = 'Save views';
+$lang['ionize_button_save_themes'] = 'Use these themes';
+$lang['ionize_button_save_settings'] = 'Save settings';
+
+
 /*
 |--------------------------------------------------------------------------
 | Global Messages
 |--------------------------------------------------------------------------
 */
 
-$lang['ionize_message_element_not_found'] = 'Bu element bulunamadı !';
-$lang['ionize_confirm_element_delete'] =	'Bu elementi kesinlikle silmek istediğinizden eminmisiniz ?';
-$lang['ionize_message_missing_params'] =	'Eksik Ayarlar';
-$lang['ionize_message_operation_ok'] =		'Operasyon Başarılı';
-$lang['ionize_message_operation_nok'] =		'Operasyon Başarısız';
-$lang['ionize_message_delete_installer'] =  'ÖNEMLİ : <br/>Güvenlik nedeniyle, lütfen <b>"/install"</b> klasörünü silin. Ionize bu dosya silinene kadar kullanılabilir olmayacak.';
-$lang['ionize_message_no_circular_link'] = 'Dairesel bağlantıya izin verilmez';
-$lang['ionize_message_target_link_not_unique'] = 'Hedef elementin ağaç menüde eşi olmamalıdır!';
-$lang['button_delete_installer_done_admin'] =  	"Tamam! Yönetim Paneline Git";
-$lang['button_delete_installer_done_site'] =  	"Tamam! Ön Sayfaya Git";
-$lang['ionize_message_item_used_by_data_no_delete'] = 'Bu öğe kullanımda ve silinemez';
-$lang['ionize_message_url_not_found'] = 'URL bulunamadı';
-$lang['ionize_message_url_got_404'] = 'Bu URL 404 sayfasına gidiyor';
+$lang['ionize_message_element_not_found'] = 'This element wasn\'t found !';
+$lang['ionize_confirm_element_delete'] = 'Do you want to definitely delete this element ?';
+$lang['ionize_message_missing_params'] = 'Missing settings';
+$lang['ionize_message_operation_ok'] = 'Operation OK';
+$lang['ionize_message_operation_nok'] = 'Operation failed';
+$lang['ionize_message_delete_installer'] = 'IMPORTANT : <br/>For security reasons, please delete the <b>"/install"</b> folder. Ionize will not be available until this folder is deleted.';
+$lang['ionize_message_no_circular_link'] = 'Circular link are not allowed';
+$lang['ionize_message_target_link_not_unique'] = 'The target element must be unique in the tree!';
+$lang['button_delete_installer_done_admin'] = 'Done! Go to Admin panel';
+$lang['button_delete_installer_done_site'] = 'Done! Go to website';
+$lang['ionize_message_item_used_by_data_no_delete'] = 'This item is used and can\'t be deleted';
+$lang['ionize_message_url_not_found'] = 'URL not found';
+$lang['ionize_message_url_got_404'] = 'This URL returns a 404 page';
 
 /*
 |--------------------------------------------------------------------------
 | Admin : Language
 |--------------------------------------------------------------------------
 */
-$lang['ionize_label_copy_content'] = 'İçeriği kopyala';
-$lang['ionize_label_copy_all_content'] = 'Tüm içeriği kopyala';
-$lang['ionize_label_copy_article_content'] = 'İçerdiği makaleler';
-$lang['ionize_label_force_lang_urls'] = 'Force lang in URLs'; //Çevrilecek
-$lang['ionize_title_language'] =			'Dil Yönetimi';
-$lang['ionize_title_existing_languages'] =	"Var Olan Diller";
-$lang['ionize_title_add_language'] =		"Dil Ekle";
-$lang['ionize_title_advanced_language'] = 'Gelişmiş fonksiyonlar';
-$lang['ionize_title_lang_urls'] = 'URL ler ve Diller';
-$lang['ionize_message_no_languages'] = 		"<b>Var Olan Dil Yok</b>. <br/> Lütfen Bir Dil Oluşturun.";
-$lang['ionize_message_lang_saved'] = 		"Dil Kaydedildi";
-$lang['ionize_message_lang_not_saved'] = 	"Dil Kaydedilemedi";
-$lang['ionize_message_lang_file_not_saved'] = 	"Hata : config/language.php yazılamıyor";
-$lang['ionize_message_lang_code_already_exists'] = 	"Bu dil kodu zaten kullanılıyor.";
-$lang['ionize_message_lang_not_deleted'] = 	"Dil Silinemedi";
-$lang['ionize_message_lang_deleted'] = 		"Dil Silindi";
-$lang['ionize_message_lang_ordered'] = 		"Diller Sıralandı";
-$lang['ionize_message_lang_not_ordered'] = 	"Diller Sıralanamadı";
-$lang['ionize_message_lang_updated'] = 		"Dil Güncellendi";
-$lang['ionize_notify_advanced_language'] = 'Ne yaptığınızdan eminseniz bu fonksiyonu kullanın.';
-$lang['ionize_button_clean_lang_tables'] = 'Dil tablolarını temizle';
-$lang['ionize_button_copy_content'] = 'İçeriği kopyala';
-$lang['ionize_help_clean_lang_tables'] = 'Varolmayan dillerin içeriğinin dil tablolarını temizler.';
-$lang['ionize_help_copy_content'] = 'Bir elementin içeriğini diğer dile kopyalar. Kopyalananlar (Başlık, alt başlık, içerik, vb.)';
-$lang['ionize_help_copy_all_content'] = 'Başka bir dilden sitenin içeriğini komple kopyalar. Varolan içeriğe zarar gelmez';
-$lang['ionize_help_copy_article_content'] = 'Ayrıca bağlantısı oluşturulmuş makalelerin içeriklerini kopyalar';
-$lang['ionize_confirmation_clean_lang'] = 'Tanımlanmamış dil tabloları dil tablosundan silinecek...';
-$lang['ionize_message_lang_tables_cleaned'] = 'İçerik tabloları temizlendi';
+$lang['ionize_label_copy_content'] = 'Copy content';
+$lang['ionize_label_copy_all_content'] = 'Copy all content';
+$lang['ionize_label_copy_article_content'] = 'Include articles';
+$lang['ionize_label_force_lang_urls'] = 'Force lang in URLs';
+$lang['ionize_title_language'] = 'Language management';
+$lang['ionize_title_existing_languages'] = 'Existing languages';
+$lang['ionize_title_add_language'] = 'Add one language';
+$lang['ionize_title_advanced_language'] = 'Advanced functions';
+$lang['ionize_title_lang_urls'] = 'URLs and Languages';
+$lang['ionize_message_no_languages'] = '<strong>No existing language</strong>. <br/> Please create one language.';
+$lang['ionize_message_lang_saved'] = 'Language saved';
+$lang['ionize_message_lang_not_saved'] = 'Language not saved';
+$lang['ionize_message_lang_file_not_saved'] = 'Error : Could not write to application/config/language.php';
+$lang['ionize_message_lang_code_already_exists'] = 'This lang code already exists';
+$lang['ionize_message_lang_not_deleted'] = 'Language not deleted';
+$lang['ionize_message_lang_deleted'] = 'Language deleted';
+$lang['ionize_message_lang_ordered'] = 'Languages ordered';
+$lang['ionize_message_lang_not_ordered'] = 'Languages not ordered';
+$lang['ionize_message_lang_updated'] = 'Languages updated';
+$lang['ionize_notify_advanced_language'] = 'Use these functions only if you know what you are doing.';
+$lang['ionize_button_clean_lang_tables'] = 'Clean lang tables';
+$lang['ionize_button_copy_content'] = 'Copy content';
+$lang['ionize_help_clean_lang_tables'] = 'Clean the content of lang tables by removing all content for non existing languages.';
+$lang['ionize_help_copy_content'] = 'Copy the element content from one language to another. Copy of all content (titles, subtitle, content, etc.)';
+$lang['ionize_help_copy_all_content'] = 'Copy the whole website content from one language to another. Doesn\'t replace existing content';
+$lang['ionize_help_copy_article_content'] = 'Also copy content for linked articles';
+$lang['ionize_confirmation_clean_lang'] = 'All the content of not defined language will be removed from lang tables...';
+$lang['ionize_message_lang_tables_cleaned'] = 'Content tables cleaned';
+$lang['ionize_message_article_content_copied'] = 'Article content copied';
+$lang['ionize_message_source_destination_lang_not_different'] = 'Source and destination language must be different!';
+$lang['ionize_message_page_content_copied'] = 'Page content copied';
+$lang['ionize_message_page_article_content_copied'] = 'Page & articles content copied';
+$lang['ionize_message_confirm_copy_whole_content'] = 'Do you really want to copy the whole content to this language?';
+$lang['ionize_message_lang_content_copied'] = 'Lang content copy successful';
 
-$lang['ionize_message_article_content_copied'] = 'Makale içeriği kopyalandı';
-$lang['ionize_message_source_destination_lang_not_different'] = 'Kaynak ve hedef dil farklı olmalıdır!';
-$lang['ionize_message_page_content_copied'] = 'Sayfa içeriği kopyalandı';
-$lang['ionize_message_page_article_content_copied'] = 'Sayfa & makalelerin içerikleri kopyalandı';
-$lang['ionize_message_confirm_copy_whole_content'] = 'Bu dilin tüm içeriğini gerçekten kopyalamak istiyormusunuz?';
-$lang['ionize_message_lang_content_copied'] = 'Dil içeriği kopyalama başarılı';
 
 /*
 |--------------------------------------------------------------------------
 | Admin : Users & groups
 |--------------------------------------------------------------------------
 */
-$lang['ionize_title_users'] =				'Kullanıcı Yönetimi';
-$lang['ionize_title_user_edit'] =			"Kullanıcı Düzenle";
-$lang['ionize_title_existing_users'] =		'Var Olan Kullanıcı';
-$lang['ionize_title_existing_groups'] = 'Varolan Gruplar';
-$lang['ionize_title_group_edit'] = 'Grup Düzenle';
-$lang['ionize_title_add_user'] =			'Kullanıcı Ekle';
-$lang['ionize_title_add_group'] = 'Bir Grup Ekle';
-$lang['ionize_title_change_password'] =		'Şifreyi Değiştir';
-$lang['ionize_title_users_export'] = 'Kullanıcıları Aktar';
-$lang['ionize_title_user_meta'] = 'Kullanıcı Meta Verileri';
-$lang['ionize_title_filter_userslist'] = 			'Kullanıcı Listesi Filtreleme';
-$lang['ionize_label_username'] =					'ID (kullanıcı adı)';
-$lang['ionize_label_screen_name'] = 		'Tam İsim';
-$lang['ionize_label_email'] = 				'E-Posta';
-$lang['ionize_label_group'] = 				'Grup';
-$lang['ionize_label_password'] = 			'Şifre';
-$lang['ionize_label_password2'] = 			'Onay';
-$lang['ionize_label_group_name'] = 'İsim';
-$lang['ionize_label_group_title'] = 'Başlık';
-$lang['ionize_label_group_level'] = 'Seviye';
-$lang['ionize_label_group_description'] = 'Açıklama';
-$lang['ionize_label_export_meta'] = 'Dışarı Aktar';
-$lang['ionize_label_export_format'] = 'Biçim';
-$lang['ionize_label_last_visit'] = 'Son Ziyaret';
-$lang['ionize_label_join_date'] = 'Kayıt tarihi';
-$lang['ionize_label_users_count'] = 'Kullanıcı sayısı';
-$lang['ionize_label_all_groups'] = '-- Tüm Gruplar --';
-$lang['ionize_label_last_registered'] = 'Son kayıt olan';
-$lang['ionize_label_users_per_page'] = 'Kullanıcılar / sayfa';
-$lang['ionize_label_filter_result'] = 'Filtreleme sonucu';
-$lang['ionize_message_user_updated'] = 		'Kullanıcı Güncellendi';
-$lang['ionize_message_user_not_saved'] = 	'Kullanıcı Güncellenemedi';
-$lang['ionize_message_user_saved'] = 		'Kullanıcı Kaydedildi';
-$lang['ionize_message_user_exists'] = 'Kullanıcı Zaten Veritabanında Mevcut!';
-$lang['ionize_message_user_deleted'] = 		'Kullanıcı Silindi';
-$lang['ionize_message_user_cannot_delete_yourself'] = 	"Kendinizi Silemezsiniz!";
-$lang['ionize_message_group_updated'] = 'Grup Güncellendi';
-$lang['ionize_message_group_not_saved'] = 'Grup Güncellenemedi';
-$lang['ionize_message_group_saved'] = 'Grup Kaydedildi';
-$lang['ionize_message_group_deleted'] = 'Grup Silindi';
-$lang['ionize_message_users_exported'] = 'Kullanıcılar Aktarıldı';
-$lang['ionize_message_users_not_exported'] = 'Kullanıcılar Aktarılamadı';
+$lang['ionize_title_users'] = 'Users management';
+$lang['ionize_title_user_edit'] = 'User edit';
+$lang['ionize_title_existing_users'] = 'Users';
+$lang['ionize_title_existing_groups'] = 'Groups';
+$lang['ionize_title_group_edit'] = 'Group edit';
+$lang['ionize_title_add_user'] = 'Add one user';
+$lang['ionize_title_add_group'] = 'Add one group';
+$lang['ionize_title_change_password'] = 'Change the password';
+$lang['ionize_title_users_export'] = 'Users export';
+$lang['ionize_title_user_meta'] = 'Users meta data';
+$lang['ionize_title_filter_userslist'] = 'Userlist filter';
 
-$lang['ionize_button_export'] =	'Dışarı Aktar';
+$lang['ionize_label_username'] = 'Login';
+$lang['ionize_label_screen_name'] = 'Complete name';
+$lang['ionize_label_email'] = 'Email';
+$lang['ionize_label_group'] = 'Group';
+$lang['ionize_label_password'] = 'Password';
+$lang['ionize_label_password2'] = 'Confirm';
+$lang['ionize_label_group_name'] = 'Name';
+$lang['ionize_label_group_title'] = 'Title';
+$lang['ionize_label_group_level'] = 'Level';
+$lang['ionize_label_group_description'] = 'Description';
+$lang['ionize_label_export_meta'] = 'Meta-data to export';
+$lang['ionize_label_export_format'] = 'Format';
+$lang['ionize_label_last_visit'] = 'Last visit';
+$lang['ionize_label_join_date'] = 'Register';
+$lang['ionize_label_users_count'] = 'Number of Users';
+$lang['ionize_label_all_groups'] = '-- All groups --';
+$lang['ionize_label_last_registered'] = 'Last registered';
+$lang['ionize_label_users_per_page'] = 'Users / page';
+$lang['ionize_label_filter_result'] = 'Résultat du filtre';
 
-/*
-|--------------------------------------------------------------------------
-| Admin : Ayarlar
-|--------------------------------------------------------------------------
-*/
+$lang['ionize_message_user_updated'] = 'User updated';
+$lang['ionize_message_user_not_saved'] = 'User not updated';
+$lang['ionize_message_user_saved'] = 'User saved';
+$lang['ionize_message_user_exists'] = 'User already in database!';
+$lang['ionize_message_user_deleted'] = 'User deleted';
+$lang['ionize_message_user_cannot_delete_yourself'] = 'You can\'t delete yourself!';
+$lang['ionize_message_group_updated'] = 'Group updated';
+$lang['ionize_message_group_not_saved'] = 'Group not updated';
+$lang['ionize_message_group_saved'] = 'Group saved';
+$lang['ionize_message_group_deleted'] = 'Group deleted';
+$lang['ionize_message_users_exported'] = 'Users exported';
+$lang['ionize_message_users_not_exported'] = 'Users not exported';
 
-$lang['ionize_label_site_title'] =			'Site Başlığı';
-$lang['ionize_message_settings_saved'] = 	'Ayarlar Kaydedildi';
-$lang['ionize_title_visual_help'] =	"Görsel Yardım";
-$lang['ionize_label_show_help_tips'] =		"Alanlarda Yardım Görüntüle";
-$lang['ionize_title_admin_panel_languages'] = 'Yönetim paneli arayüz dili';
-$lang['ionize_title_admin_panel_datetime'] =  'Tarih ve Zaman';
-$lang['ionize_label_display_connected_label'] = 'Bağlı etiket';
-$lang['ionize_help_display_connected_label'] = 'Yönetim paneline giriş yapıldığında internet sitesinin sol üst köşesinde etiket gösterilecek';
-
-$lang['ionize_onchange_ionize_settings'] = 'Yönetim panelini ayarları kaydettikten sonra yenilemeniz gerekiyor (CTRL + R).';
-
-/*
-|--------------------------------------------------------------------------
-| Admin : Teknik Ayarlar
-|--------------------------------------------------------------------------
-*/
-$lang['ionize_title_themes'] =				'Temalar';
-$lang['ionize_title_theme'] =				'Tema';
-$lang['ionize_title_translation'] =			'Statik Çeviri';
-$lang['ionize_title_database'] =			'Veritabanı';
-$lang['ionize_title_mail_send'] =			'E-posta gönderiliyor';
-$lang['ionize_title_media_management'] =	'Medya Yönetimi';
-$lang['ionize_title_google_analytics'] =	'İstatistikler';
-$lang['ionize_title_thumb_new'] =			'Yeni Küçük Resim';
-$lang['ionize_title_thumbs'] =				"Küçük Resimler";
-$lang['ionize_title_thumbs_system'] =		'Ionize sistem küçük resmi';
-$lang['ionize_title_form_antispam_key'] = 'Antispam JS anahtarı';
-$lang['ionize_title_article_management'] = 'Makale Yönetimi';
-$lang['ionize_title_admin_url'] = 'Yönetim Paneli Yolu';
-$lang['ionize_title_encryption_key'] = 'Şifreleme Anahtarı';
-
-$lang['ionize_label_thumb_automatic'] = 'Otomatik';
-$lang['ionize_label_files_path'] =			'Medya ana dizini';
-$lang['ionize_label_media_type_picture'] =	'Resim Uzantıları';
-$lang['ionize_label_media_type_video'] =	'Video Uzantıları';
-$lang['ionize_label_media_type_music'] =	'Müzik Uzantıları';
-$lang['ionize_label_media_type_file'] =		'Dosya Uzantıları';
-
-$lang['ionize_label_filemanager'] =			'Dosya Yöetimi';
-$lang['ionize_label_media_thumb_size'] = 'Küçük resim boyutu';
-$lang['ionize_label_theme'] = 				'Tema';
-$lang['ionize_label_theme_admin'] = 		'Yönetici Teması';
-$lang['ionize_label_db_driver'] = 			'Sürücü';
-$lang['ionize_label_db_host'] = 			'Host';
-$lang['ionize_label_db_name'] = 			'Veritabanı Adı';
-$lang['ionize_label_db_user'] = 			'Kullanıcı Adı';
-$lang['ionize_label_db_pass'] = 			'Şifre';
-$lang['ionize_label_google_analytics'] = 	'Google Analytics';
-$lang['ionize_label_tinybuttons'] = 'TinyMCE Araç Çubuğu';
-$lang['ionize_label_restore_tinybuttons'] = 'TinyMCE varsayılan araç çubuğu';
-$lang['ionize_label_tinybuttons'] = 'TinyMCE Araç Çubuğu';
-$lang['ionize_label_tinyblockformats'] = 'TinyMCE Biçim Seçimi';
-$lang['ionize_label_restore_tinyblockformats'] = 'TinyMCE Varsayılan Biçimi Geri Yükle';
-
-$lang['ionize_label_smtp_protocol'] =		'Protokol';
-$lang['ionize_label_smtp_host'] =			'Host';
-$lang['ionize_label_smtp_user'] =			'Kullcanıcı Adı';
-$lang['ionize_label_smtp_pass'] =			'Şifre';
-$lang['ionize_label_smtp_port'] =			'Port';
-$lang['ionize_label_email_charset'] =		'Karakter Kodlaması';
-$lang['ionize_label_email_mailtype'] =		'Format';
-$lang['ionize_label_mailpath'] =			'Posta Yolu';
-
-$lang['ionize_label_thumb_dir'] = 			'Dosya';
-$lang['ionize_label_thumb_size'] = 			'Boyut';
-$lang['ionize_label_thumb_sizeref'] = 		'Referans';
-$lang['ionize_label_thumb_sizeref_width'] = 	'Genişlik';
-$lang['ionize_label_thumb_sizeref_height'] = 	'Yükseklik';
-$lang['ionize_label_thumb_square'] = 		'Kare';
-$lang['ionize_label_thumb_unsharp'] = 		'Keskin Olmayan Filtre';
-$lang['ionize_label_thumb_list'] = 			'Resim Listesi';
-$lang['ionize_label_thumb_edition'] = 		'Resim Baskısı';
-$lang['ionize_label_thumbs_system'] = 		'Resim Liste / Düzenle';
-$lang['ionize_label_setting_picture_max_width'] = 'Resim Genişliği maks.';
-$lang['ionize_label_setting_picture_max_height'] = 'Resim Yüksekliği maks.';
-
-$lang['ionize_onchange_filemanager'] = 'Değişiklikleri kaydettikten sonra yönetici panelini yeniden yükleyin.';
-$lang['ionize_onchange_texteditor'] = 'Değişiklikleri kaydettikten sonra yönetici panelini yeniden yükleyin.';
-$lang['ionize_label_current_antispam_key'] = 'Varolan anahtar';
-$lang['ionize_label_refresh_antispam_key'] = 'Anahtarı yenile';
-$lang['ionize_label_texteditor'] = 'Yazı Editörü';
-$lang['ionize_title_db_version'] = 			'Veritabanı';
-$lang['ionize_title_php_version'] = 		'PHP';
-
-$lang['ionize_message_database_not_saved'] = 		'Yanlış veritabanı ayarları';
-$lang['ionize_message_database_not_exist'] = 		"Seçili veritabanı mevcut değil";
-$lang['ionize_message_database_connection_error'] = 'Veritabanı bağlantısı şuanda mümkün değil';
-$lang['ionize_message_database_saved'] = 				'Veritabanı ayarları başarıyla kaydedildi';
-
-$lang['ionize_message_smtp_not_saved'] = 		'E-posta ayarları eksik veya yanlış';
-$lang['ionize_message_smtp_saved'] = 			'E-posta ayarları kaydedildi';
-
-$lang['ionize_message_thumb_saved'] = 					'Küçük Resim Kaydedildi';
-$lang['ionize_message_thumb_not_saved'] = 				'Küçük Resim Kaydedilemedi';
-$lang['ionize_message_thumb_deleted'] = 				'Küçük Resim Silindi';
-$lang['ionize_message_thumb_not_deleted'] = 			'Küçük Resim Silinemedi';
-
-$lang['ionize_message_admin_url_error'] = 'Yönetim paneli URL si boş bırakılamaz ve sadece Alfanümerik karakterler içermek zorundadır.';
-$lang['ionize_confirm_change_admin_url'] = 'Yeni URL yi hatırlayacağımızdam emin olun ! Kayıt ettikten sonra, Yönetim Paneli sayfası yeniden yüklenecek.';
-$lang['ionize_message_error_no_files_path'] = 'Medya klasörü oluşturulmalı!';
-$lang['ionize_message_error_writing_file'] = 'Dosya yazma hatası';
-$lang['ionize_message_error_writing_config_file'] = 'application/config/config.php  yazılamıyor !';
-$lang['ionize_message_error_writing_medias_file'] = 	'/config/medias.php yazılamıyor !';
-$lang['ionize_message_error_writing_database_file'] = 	'/config/database.php yazılamıyor !';
-$lang['ionize_message_error_writing_email_file'] = 		'/config/email.php yazılamıyor !';
-$lang['ionize_message_error_writing_ionize_file'] = 'application/config/ionize.php yazılamıyor !';
-
-
-$lang['ionize_help_setting_google_analytics'] = 'Google Analytics web sitesinden kopyaladığınız script ile analytics işlemini tamamlayın';
-$lang['ionize_help_setting_files_path'] =			"Medya Dosya Yolu Belirtin. Fiziksel dosya adını değiştirmeyin";
-$lang['ionize_help_setting_system_thumb_list'] =	"Küçük resimler ionize resim listesi ve resim düzenleme penceresinde gösterildi";
-$lang['ionize_help_setting_media_type_picture'] =	'Uzantılar, noktasız, virgülle ayrılmış';
-$lang['ionize_help_setting_media_type_music'] =		'Uzantılar, noktasız, virgülle ayrılmış';
-$lang['ionize_help_setting_media_type_video'] =		'Uzantılar, noktasız, virgülle ayrılmış';
-$lang['ionize_help_setting_media_type_file'] =		'Uzantılar, noktasız, virgülle ayrılmış';
-$lang['ionize_help_media_thumb_size'] = 'Sistem küçük resim boyutu, pixel olarak';
-$lang['ionize_help_tinybuttons'] = 'TinyMCE dökümantasyonuna gözat';
-$lang['ionize_help_setting_picture_max_height'] = 'Yükeleme esnasında resim boyutları belirtilen boyutları aşarsa yeniden boyutlandırılır.';
-$lang['ionize_help_setting_picture_max_width'] = 'Yükeleme esnasında resim boyutları belirtilen boyutları aşarsa yeniden boyutlandırılır.';
-$lang['ionize_help_tinyblockformats'] = 'Varsayılan TinyMCE Blok Biçimi (Seç)';
-
-/*
-|--------------------------------------------------------------------------
-| Admin : Temalar
-|--------------------------------------------------------------------------
-*/
-$lang['ionize_title_views_list'] =		'Şu anki tema görünüm listesi';
-$lang['ionize_title_view_edit'] =		'Düzenle';
-$lang['ionize_title_views_translations'] =		'Şu anki tema statik element çevirileri';
-$lang['ionize_label_view_filename'] =	'Dosya';
-$lang['ionize_label_view_folder'] =		'Klasör';
-$lang['ionize_label_view_name'] =		'Mantıksal İsim';
-$lang['ionize_label_view_type'] =		'Tipi';
-$lang['ionize_label_current_theme'] =	'Şu Anki Tema';
-
-$lang['ionize_select_no_type'] =		'-- Tip Yok --';
-$lang['ionize_message_views_saved'] =	'Görüntüleme Ayarları Kaydedildi';
-
-$lang['ionize_message_view_saved'] =	'Görünüm Kaydedildi';
+$lang['ionize_button_export'] = 'Export';
 
 
 /*
 |--------------------------------------------------------------------------
-| Admin : Sayfa
+| Admin : Settings
 |--------------------------------------------------------------------------
 */
-$lang['ionize_title_pages'] =					'Sayfalar';
-$lang['ionize_title_create_page'] = 'Sayfa oluştur';
-$lang['ionize_title_new_page'] =				'Sayfa Oluştur';
-$lang['ionize_title_edit_page'] =				"Sayfa Düzenle";
-$lang['ionize_title_page_parent'] = 'Ana / Kaynak';
 
-$lang['ionize_title_help_articles_types'] = 'Tipler Hakkında';
-$lang['ionize_label_page_online'] = 'Sayfa yayında';
-$lang['ionize_label_page_content_online'] = 'Bu dil için yayında';
-$lang['ionize_label_articles'] =				'Makaleler';
-$lang['ionize_label_add_article'] =				'Bir Makale Ekle';
-$lang['ionize_label_appears'] =					'Menüde Göster';
-$lang['ionize_label_link'] =					'Adres';
-$lang['ionize_label_pagination_nb'] =			'Makaleler / sayfa';
-$lang['ionize_label_article_list_template'] =	'Görüntü Listesi';
-$lang['ionize_label_page_delete_date'] = 'Sayfa tarih silme';
-$lang['ionize_label_menu'] = 'Menü';
-$lang['ionize_label_home_page'] = 'Ana sayfa';
+$lang['ionize_label_site_title'] = 'Website title';
+$lang['ionize_message_settings_saved'] = 'Settings saved';
+$lang['ionize_title_visual_help'] = 'Visual help';
+$lang['ionize_label_show_help_tips'] = 'Display help on fields';
+$lang['ionize_title_admin_panel_languages'] =  'Administration interface languages';
+$lang['ionize_title_admin_panel_datetime'] =  'Date and Time';
+$lang['ionize_label_display_connected_label'] = 'Connected label';
+$lang['ionize_help_display_connected_label'] = 'Displays a label on the top left of the website when you\'re connected to the Admin panel';
+$lang['ionize_onchange_ionize_settings'] = 'The Administration panel will reload after saving these settings.';
 
-$lang['ionize_select_default_view'] =			'-- Varsayılan Görüntü --';
-$lang['ionize_select_everyone'] =				'-- Herkez --';
-
-$lang['ionize_message_page_name_exists'] =		'Bu sayfa zaten var!';
-$lang['ionize_message_page_url_exists'] = 'Aynı URL\'ye sahip bir sayfa zaten var !';
-$lang['ionize_message_page_saved'] =			'Sayfa kaydedildi';
-$lang['ionize_message_page_not_saved'] =		'Sayfa kaydedilemedi';
-$lang['ionize_message_page_not_exist'] =		"Sayfa yok";
-$lang['ionize_message_page_ordered'] =			'Sayfa Sıralandı';
-$lang['ionize_message_page_needs_url_or_title'] = 'Lütfen varsayılan dil için URL yada Başlık giriniz !';
-$lang['ionize_message_drop_only_article'] = 'Lütfen sadece bir makale bırakın!';
-
-$lang['ionize_help_page_online'] =				'Bu sayfa yayındamı?';
-$lang['ionize_help_page_content_online'] = 'Bu sayfa bu dil için yayındamı?';
-$lang['ionize_help_page_url'] = 'Sayfaların URL\'leri. Eşsiz olmalıdır';
-$lang['ionize_help_page_link'] = 'İç yada Dış HTTP bağlantısı. Yerine varsayılan sayfa bağlantısı';
-$lang['ionize_help_pagination'] =				'Eğer (if > 0), Sayfalamayı aktive et.';
-$lang['ionize_help_article_list_template'] =	'Eğer sayfada 1 den fala makale varsa, her makale için ayrı görüntüleme kullan';
-$lang['ionize_help_appears'] =					'Sayfa navigasyon menüsünde görünsünmü ?';
-$lang['ionize_help_page_meta'] =				"Boş olmadığında genel site META larını kullan";
-$lang['ionize_help_page_window_title'] =		'Browser pencere başlığı';
-$lang['ionize_help_home_page'] = 'Bu sayfa web sitenizin ana sayfasımı ?';
-$lang['ionize_help_add_page_to_menu'] = 'Bu menüye sayfa ekle';
-$lang['ionize_help_page_drop_article_here'] = 'Soldaki ağaç menüden makalenin ismini seçerek taşıyın.';
-$lang['ionize_label_help_articles_types_and_views'] = 'Tipler & Görünümler Hakkında';
-$lang['ionize_label_help_articles_types'] = 'Tipler Hakkında';
 
 /*
 |--------------------------------------------------------------------------
-| Admin : Medya
+| Admin : Technical Settings
 |--------------------------------------------------------------------------
 */
-$lang['ionize_title_medias'] =				'Medyalar';
-$lang['ionize_title_thumbs_status'] =		'Küçük Resim Durumu';
-$lang['ionize_title_informations'] =		'Bilgiler';
+$lang['ionize_title_themes'] = 'Themes';
+$lang['ionize_title_theme'] = 'Theme';
+$lang['ionize_title_translation'] = 'Static translations';
+$lang['ionize_title_database'] = 'Database';
+$lang['ionize_title_mail_send'] = 'Email sending';
+$lang['ionize_title_media_management'] = 'Media management';
+$lang['ionize_title_google_analytics'] = 'Statistics';
+$lang['ionize_title_thumb_new'] = 'New picture thumbnail';
+$lang['ionize_title_thumbs'] = 'Thumbnails';
+$lang['ionize_title_thumbs_system'] = 'Ionize system thumbnail';
+$lang['ionize_title_form_antispam_key'] = 'Antispam JS key';
+$lang['ionize_title_article_management'] = 'Article management';
+$lang['ionize_title_admin_url'] = 'Admin panel URL';
+$lang['ionize_title_encryption_key'] = 'Encryption key';
+$lang['ionize_title_cache'] = 'Cache System';
 
-$lang['ionize_label_file_size'] =			'Dosya Boyutu';
-$lang['ionize_label_reload_picture_list'] =	'Listeyi yeniden yükle';
-$lang['ionize_message_no_picture'] =		'Resim yok';
-$lang['ionize_message_no_music'] =			'Müzik yok';
-$lang['ionize_message_no_video'] =			'Video yok';
-$lang['ionize_message_no_file'] =			'Dosya yok';
+$lang['ionize_label_thumb_automatic'] = 'Automatic';
+$lang['ionize_label_files_path'] = 'Media base folder';
+$lang['ionize_label_media_type_picture'] = 'Images extensions';
+$lang['ionize_label_media_type_video'] = 'Videos extensions';
+$lang['ionize_label_media_type_music'] = 'Music extensions';
+$lang['ionize_label_media_type_file'] = 'File extensions';
+$lang['ionize_label_filemanager'] = 'File manager';
+$lang['ionize_label_media_thumb_size'] = 'Thumbnails size';
+$lang['ionize_label_theme'] = 'Theme';
+$lang['ionize_label_theme_admin'] = 'Admin theme';
+$lang['ionize_label_db_driver'] = 'Driver';
+$lang['ionize_label_db_host'] = 'Host';
+$lang['ionize_label_db_name'] = 'Database name';
+$lang['ionize_label_db_user'] = 'User';
+$lang['ionize_label_db_pass'] = 'Password';
+$lang['ionize_label_google_analytics'] = 'Google Analytics';
+$lang['ionize_label_tinybuttons'] = 'Toolbar TinyMCE';
+$lang['ionize_label_restore_tinybuttons'] = 'Restore TinyMCE default toolbar';
+$lang['ionize_label_tinybuttons'] = 'Toolbar TinyMCE';
+$lang['ionize_label_tinyblockformats'] = 'TinyMCE Format Select';
+$lang['ionize_label_restore_tinyblockformats'] = 'Restore TinyMCE default Format Select';
 
-$lang['ionize_label_init_thumb'] =			'Küçük Resimleri Yenile';
-$lang['ionize_label_attach_media'] =		'Medya Ekle';
-$lang['ionize_label_detach_media'] =		'Medya bağlantısını kaldır';
-$lang['ionize_label_detach_all_pictures'] =	'Tüm Resim bağlantılarını kaldır';
-$lang['ionize_label_detach_all_videos'] =	'Tüm Video bağlantılarını kaldır';
-$lang['ionize_label_detach_all_musics'] =	'Tüm Müzik bağlantılarını kaldır';
-$lang['ionize_label_detach_all_files'] =	'Tüm Dosya bağlantılarını kaldır';
-$lang['ionize_label_init_all_thumbs'] =		'Küçük Resimleri Yenile';
-$lang['ionize_label_copyright'] =			'Telif Hakkı';
-$lang['ionize_label_date'] =				'Tarih';
-$lang['ionize_label_alt'] =					'Alternatif Metin';
-$lang['ionize_label_link'] =				'Bağlantı';
-$lang['ionize_label_description'] =			'Açıklama';
-$lang['ionize_label_reload_media_list'] =	"Medya Listesini Tekrar Yükle";
-$lang['ionize_label_media_container'] = 'Albüm / Serisi';
-$lang['ionize_label_media_crop_picture'] = 'Resmi Kes';
+$lang['ionize_label_smtp_protocol'] = 'Protocol';
+$lang['ionize_label_smtp_host'] = 'Host';
+$lang['ionize_label_smtp_user'] = 'User';
+$lang['ionize_label_smtp_pass'] = 'Password';
+$lang['ionize_label_smtp_port'] = 'Port';
+$lang['ionize_label_email_charset'] = 'Charset';
+$lang['ionize_label_email_mailtype'] = 'Format';
+$lang['ionize_label_mailpath'] = 'Mail path';
 
-$lang['ionize_message_please_save_first'] =		"Lütfen medya eklemeden önce kaydedin";
-$lang['ionize_message_media_not_authorized'] =	'Medya türü desteklenmiyor !';
-$lang['ionize_message_media_attached'] =		'Medya Bağlantısı Oluşturuldu';
-$lang['ionize_message_media_detached'] =		'Medya Bağlantısı Kaldırıldı';
-$lang['ionize_message_no_media_to_detach'] =		'Bağlantısı Kaldırılacak Element Bulunamadı !';
-$lang['ionize_message_no_picture'] =			'Resim Bağlantısı Yok';
-$lang['ionize_message_no_video'] =				'Video Bağlantısı Yok';
-$lang['ionize_message_no_music'] =				'Müzik Bağlantısı Yok';
-$lang['ionize_message_no_file'] =				'Dosya Bağlantısı Yok';
-$lang['ionize_message_media_not_detached'] =		'Medya Bağlantısı Kaldırılmadı';
-$lang['ionize_message_media_already_attached'] =	'Media Bağlantısı Eklendi';
-$lang['ionize_message_media_data_saved'] =			'Medya Verisi Kaydedildi';
-$lang['ionize_message_media_data_not_saved'] =		'Medya Verisi Kaydedilemedi';
-$lang['ionize_message_thumb_initialized'] =			'Küçük Resim Tekrar Oluşturuldu';
+$lang['ionize_label_cache_enabled'] = 'Enabled';
+$lang['ionize_label_cache_time'] = 'Time (mins.)';
 
-$lang['ionize_message_media_reordered'] =			'Medyalar Sıralandı';
-$lang['ionize_message_alt_desc_for_mp3'] = 'Bu medya bir MP3 olduğundan, aşağıdaki tanımı ve Alternatif metin MP3 dosyasının ID3 etiketleri üretilir.';
+$lang['ionize_label_thumb_dir'] = 'Folder';
+$lang['ionize_label_thumb_size'] = 'Size';
+$lang['ionize_label_thumb_sizeref'] = 'Reference';
+$lang['ionize_label_thumb_sizeref_width'] = 'Width';
+$lang['ionize_label_thumb_sizeref_height'] = 'Height';
+$lang['ionize_label_thumb_square'] = 'Square';
+$lang['ionize_label_thumb_unsharp'] = 'Unsharp filter';
+$lang['ionize_label_thumb_list'] = 'Picture list';
+$lang['ionize_label_thumb_edition'] = 'Picture edition';
+$lang['ionize_label_thumbs_system'] = 'Picture list / edit';
+$lang['ionize_label_setting_picture_max_width'] = 'Pictures max. Width';
+$lang['ionize_label_setting_picture_max_height'] = 'Pictures max. Height';
+
+$lang['ionize_onchange_filemanager'] = 'You have to reload the admin panel (CTRL + R) after saving changes.';
+$lang['ionize_onchange_texteditor'] = 'You have to reload the admin panel (CTRL + R) after saving changes.';
+
+$lang['ionize_label_current_antispam_key'] = 'Current key';
+$lang['ionize_label_refresh_antispam_key'] = 'Refresh the key';
+
+$lang['ionize_label_texteditor'] = 'Text editor';
+
+$lang['ionize_title_db_version'] = 'Database';
+$lang['ionize_title_php_version'] = 'PHP';
+
+$lang['ionize_message_database_not_saved'] = 'Incorrect database settings';
+$lang['ionize_message_database_not_exist'] = 'The selected database doesn\'t exist';
+$lang['ionize_message_database_connection_error'] = 'Connection to the database is not possible';
+$lang['ionize_message_database_saved'] = 'Database settings successfully saved';
+
+$lang['ionize_message_smtp_not_saved'] = 'Emails settings missing or incorrect';
+$lang['ionize_message_smtp_saved'] = 'Emails settings saved';
+
+$lang['ionize_message_thumb_saved'] = 'Thumbnail saved';
+$lang['ionize_message_thumb_not_saved'] = 'Thumbnail not saved';
+$lang['ionize_message_thumb_deleted'] = 'Thumbnail deleted';
+$lang['ionize_message_thumb_not_deleted'] = 'Thumbnail not deleted';
+
+$lang['ionize_message_admin_url_error'] = 'The Admin panel URL cannot be empty and must only contains alphanumericals.';
+$lang['ionize_confirm_change_admin_url'] = 'Be sure to remember the new URL ! After save, the Admin panel will reload.';
+
+$lang['ionize_message_error_no_files_path'] = 'The media folder must be set!';
+$lang['ionize_message_error_writing_file'] = 'File writing error';
+$lang['ionize_message_error_writing_config_file'] = 'application/config/config.php could not be written !';
+$lang['ionize_message_error_writing_medias_file'] = 'application/config/medias.php could not be written !';
+$lang['ionize_message_error_writing_database_file'] = 'application/config/database.php could not be written !';
+$lang['ionize_message_error_writing_email_file'] = 'application/config/email.php could not be written !';
+$lang['ionize_message_error_writing_ionize_file'] = 'application/config/ionize.php could not be written !';
+
+$lang['ionize_message_cache_saved'] = 'Cache Settings saved.';
+
+$lang['ionize_help_setting_google_analytics'] = 'The complete Google script, as copied from the Google Analytics website';
+$lang['ionize_help_setting_files_path'] = 'Indicates the base media folder. Doesn\'t change the physical folder name';
+$lang['ionize_help_setting_system_thumb_list'] = 'Thumbnails displayed by ionize in image list and picture edit window';
+$lang['ionize_help_setting_media_type_picture'] = 'File Extensions, comma seperated';
+$lang['ionize_help_setting_media_type_music'] = 'File Extensions, comma seperated';
+$lang['ionize_help_setting_media_type_video'] = 'File Extensions, comma seperated';
+$lang['ionize_help_setting_media_type_file'] = 'File Extensions, comma seperated';
+$lang['ionize_help_media_thumb_size'] = 'Size of system thumbnail, in pixels';
+$lang['ionize_help_tinybuttons'] = 'See TinyMCE documentation';
+$lang['ionize_help_setting_picture_max_height'] = 'Picture which exceed these size will be resized during the Upload process.';
+$lang['ionize_help_setting_picture_max_width'] = 'Picture which exceed these size will be resized during the Upload process.';
+$lang['ionize_help_tinyblockformats'] = 'Default TinyMCE Blocks Format (Select)';
+
+$lang['ionize_help_cache_enabled'] = 'Enable / Disable the cache. Disabling it will clear the existing cache.';
+$lang['ionize_help_cache_time'] = 'Number of minutes the pages will remain cached between refreshes';
+
+/*
+|--------------------------------------------------------------------------
+| Admin : Themes
+|--------------------------------------------------------------------------
+*/
+$lang['ionize_title_views_list'] = 'Current theme views list';
+$lang['ionize_title_view_edit'] = 'Edition';
+$lang['ionize_title_views_translations'] = 'Current theme static elements translation';
+$lang['ionize_label_view_filename'] = 'File';
+$lang['ionize_label_view_folder'] = 'Folder';
+$lang['ionize_label_view_name'] = 'Logical name';
+$lang['ionize_label_view_type'] = 'Type';
+$lang['ionize_label_current_theme'] = 'Current theme';
+
+$lang['ionize_select_no_type'] = '-- No type --';
+$lang['ionize_message_views_saved'] = 'Views settings saved';
+
+$lang['ionize_message_view_saved'] = 'View saved';
+
+
+/*
+|--------------------------------------------------------------------------
+| Admin : Page
+|--------------------------------------------------------------------------
+*/
+$lang['ionize_title_pages'] = 'Pages';
+$lang['ionize_title_create_page'] = 'Create page';
+$lang['ionize_title_new_page'] = 'New page';
+$lang['ionize_title_edit_page'] = 'Page edit';
+$lang['ionize_title_page_parent'] = 'Parent';
+
+$lang['ionize_title_help_articles_types'] = 'About Types';
+
+$lang['ionize_label_page_online'] = 'Page Online';
+$lang['ionize_label_page_content_online'] = 'Online for this language';
+$lang['ionize_label_articles'] = 'Articles';
+$lang['ionize_label_add_article'] = 'Add Article';
+$lang['ionize_label_appears'] = 'Display in nav';
+$lang['ionize_label_link'] = 'Link';
+$lang['ionize_label_pagination_nb'] = 'Articles / page';
+$lang['ionize_label_article_list_template'] = 'List view';
+$lang['ionize_label_page_delete_date'] = 'Page delete date';
+$lang['ionize_label_menu'] = 'Menu';
+$lang['ionize_label_home_page'] = 'Home page';
+
+$lang['ionize_select_default_view'] = '-- Default view --';
+$lang['ionize_select_everyone'] = '-- Everyone --';
+
+$lang['ionize_message_page_name_exists'] = 'This page already exists!';
+$lang['ionize_message_page_url_exists'] = 'One page with a same URL already exists !';
+$lang['ionize_message_page_saved'] = 'Page saved';
+$lang['ionize_message_page_not_saved'] = 'Page not saved';
+$lang['ionize_message_page_not_exist'] = 'Page don\'t exist';
+$lang['ionize_message_page_ordered'] = 'Page ordered';
+$lang['ionize_message_page_needs_url_or_title'] = 'Please fill title or URL for the default language !';
+$lang['ionize_message_drop_only_article'] = 'Please drop only an article!';
+
+$lang['ionize_help_page_online'] = 'Is this page online?';
+$lang['ionize_help_page_content_online'] = 'Is this page online for this language?';
+$lang['ionize_help_page_url'] = 'Page\'s URL. Must be unique';
+$lang['ionize_help_page_link'] = 'Internal or External HTTP link. Replace the default page link';
+$lang['ionize_help_pagination'] = 'If > 0, activate the pagination of article.';
+$lang['ionize_help_article_list_template'] = 'If more than 1 article on the page, use of this view to display each article';
+$lang['ionize_help_appears'] = 'Does the page appears in the navigation menu ?';
+$lang['ionize_help_page_meta'] = 'Replace the global website META when not empty';
+$lang['ionize_help_page_window_title'] = 'Browser window title';
+$lang['ionize_help_home_page'] = 'Is this page the home page of the website ?';
+$lang['ionize_help_add_page_to_menu'] = 'Add a page to this menu';
+$lang['ionize_help_page_drop_article_here'] = 'Drag an article from the left tree by selecting its name.';
+$lang['ionize_label_help_articles_types_and_views'] = 'About Types & Views';
+$lang['ionize_label_help_articles_types'] = 'About Types';
+
+/*
+|--------------------------------------------------------------------------
+| Admin : Media
+|--------------------------------------------------------------------------
+*/
+$lang['ionize_title_medias'] = 'Medias';
+$lang['ionize_title_thumbs_status'] = 'Thumbnails status';
+$lang['ionize_title_informations'] = 'Information';
+
+$lang['ionize_label_file_size'] = 'File size';
+$lang['ionize_label_reload_picture_list'] = 'Reload list';
+$lang['ionize_message_no_picture'] = 'No image';
+$lang['ionize_message_no_music'] = 'No audio file';
+$lang['ionize_message_no_video'] = 'No video file';
+$lang['ionize_message_no_file'] = 'No file';
+
+$lang['ionize_label_init_thumb'] = 'Init thumbnails';
+$lang['ionize_label_attach_media'] = 'Add Media';
+$lang['ionize_label_detach_media'] = 'Unlink media';
+$lang['ionize_label_detach_all_pictures'] = 'Unlink all pictures';
+$lang['ionize_label_detach_all_videos'] = 'Unlink all videos';
+$lang['ionize_label_detach_all_musics'] = 'Unlink all music';
+$lang['ionize_label_detach_all_files'] = 'Unlink all files';
+$lang['ionize_label_init_all_thumbs'] = 'Init all thumbs';
+$lang['ionize_label_copyright'] = 'Copyright';
+$lang['ionize_label_date'] = 'Date';
+$lang['ionize_label_alt'] = 'Alternative text';
+$lang['ionize_label_link'] = 'Link';
+$lang['ionize_label_description'] = 'Description';
+$lang['ionize_label_reload_media_list'] = 'Reload media list';
+$lang['ionize_label_media_container'] = 'Album / Serie';
+$lang['ionize_label_media_crop_picture'] = 'Crop Picture';
+
+$lang['ionize_message_please_save_first'] = 'Please save before adding media';
+$lang['ionize_message_media_not_authorized'] = 'Media type not authorized !';
+$lang['ionize_message_media_attached'] = 'Media linked';
+$lang['ionize_message_media_detached'] = 'Media unlinked';
+$lang['ionize_message_no_media_to_detach'] = 'No element to unlink !';
+$lang['ionize_message_no_picture'] = 'No linked image';
+$lang['ionize_message_no_video'] = 'No linked video';
+$lang['ionize_message_no_music'] = 'No linked musice';
+$lang['ionize_message_no_file'] = 'No linked file';
+$lang['ionize_message_media_not_detached'] = 'Media not unlinked';
+$lang['ionize_message_media_already_attached'] = 'Media already linked';
+$lang['ionize_message_media_data_saved'] = 'Media data saved';
+$lang['ionize_message_media_data_not_saved'] = 'Media data not saved';
+$lang['ionize_message_thumb_initialized'] = 'Thumbnail regenerated';
+
+$lang['ionize_message_media_reordered'] = 'Medias ordered';
+$lang['ionize_message_alt_desc_for_mp3'] = 'Because this media is an MP3, the following <strong>Description</strong> and the <strong>Alternative text</strong> are generated from MP3 file\'s ID3 tags.';
 
 // Exceptions
-$lang['ionize_exception_folder_creation'] =		'Klasör oluşturma sırasında hata oluştu';
-$lang['ionize_exception_no_thumbs_settings'] =	'Ayarlar : Küçük resim bulunamadı!';
-$lang['ionize_exception_getimagesize'] =		'PHP : getimagesize fonksiyonu mevcut değil!';
-$lang['ionize_exception_getimagesize_get'] =	"Görüntü boyutunu elde etmek mümkün değil";
-$lang['ionize_exception_chmod'] =				'PHP : CHMOD imkansız';
-$lang['ionize_exception_unlink'] =				'PHP : dosya silmek inkansız';
-$lang['ionize_exception_image_resize'] =		"Resim Küt. : Resim boyutlandırma imkansız";
-$lang['ionize_exception_image_crop'] =			"Resim Küt. : Resim kırpma imkansız";
-$lang['ionize_exception_copy'] =				"PHP : Resmi kopyalamak mümkün değil";
-$lang['ionize_exception_no_source_file'] =		"Kaynak dosya bulunamadıs";
-$lang['ionize_exception_memory_limit'] =		"PHP Hafıza limiti aşıldı";
-$lang['ionize_exception_image_lib'] =			"Resim Kütüphanesi Hatası";
-
+$lang['ionize_exception_folder_creation'] = 'Error during folder creation';
+$lang['ionize_exception_no_thumbs_settings'] = 'Settings : No thumbnails defined!';
+$lang['ionize_exception_getimagesize'] = 'PHP : getimagesize function not available!';
+$lang['ionize_exception_getimagesize_get'] = 'Impossible to get the image size';
+$lang['ionize_exception_chmod'] = 'PHP : CHMOD impossible';
+$lang['ionize_exception_unlink'] = 'PHP : Impossible to delete the file';
+$lang['ionize_exception_image_resize'] = 'Image Lib : Impossible to resize the picture';
+$lang['ionize_exception_image_crop'] = 'Image Lib : Impossible to crop the picture';
+$lang['ionize_exception_copy'] = 'PHP : Picture copy not possible';
+$lang['ionize_exception_no_source_file'] = 'Source file not found';
+$lang['ionize_exception_memory_limit'] = 'PHP Memory limit reached';
+$lang['ionize_exception_image_lib'] = 'Image Lib Error';
 
 
 /*
@@ -721,165 +741,166 @@ $lang['ionize_exception_image_lib'] =			"Resim Kütüphanesi Hatası";
 | Admin : Article
 |--------------------------------------------------------------------------
 */
-$lang['ionize_title_articles'] =			'Makaleler';
-$lang['ionize_select_no_parent'] = '-- Yok --';
-$lang['ionize_select_no_category'] =		'-- Yok --';
+$lang['ionize_title_articles'] = 'Articles';
+$lang['ionize_select_no_parent'] = '-- No one --';
+$lang['ionize_select_no_category'] = '-- No one --';
 
-$lang['ionize_title_create_article'] =		'Yeni Makale';
-$lang['ionize_title_new_article'] =		"Yeni Makale";
-$lang['ionize_title_edit_article'] = 'Makale Düzenle';
-$lang['ionize_title_comments'] =			'Yorumlar';
-$lang['ionize_title_duplicate_article'] = 'Makaleyi kopyala';
-$lang['ionize_title_duplicate_source_context'] = 'Makale Kaynağı';
-$lang['ionize_title_duplicate_destination'] = 'Hedef';
-$lang['ionize_title_article_context'] = 'Makale bağlamı';
-$lang['ionize_title_content'] = 'İçerik';
+$lang['ionize_title_create_article'] = 'Create article';
+$lang['ionize_title_new_article'] = 'New article';
+$lang['ionize_title_edit_article'] = 'Article edition';
+$lang['ionize_title_comments'] = 'Comments';
+$lang['ionize_title_duplicate_article'] = 'Duplicate article';
+$lang['ionize_title_duplicate_source_context'] = 'Source article';
+$lang['ionize_title_duplicate_destination'] = 'Destination';
 
-$lang['ionize_label_article_in'] = 'içinde';
-$lang['ionize_label_article_online'] = 'Makale yayında';
-$lang['ionize_label_article_content_online'] = 'İçerik yayında';
-$lang['ionize_label_parents'] = 'Ana / Kaynaklar';
-$lang['ionize_label_indexed'] =				'Listelenen';
-$lang['ionize_label_categories'] =			'Kategoriler';
-$lang['ionize_label_edit_categories'] =		'Kategorileri Düzenle';
-$lang['ionize_label_new_category'] =		'Kategori Oluştur';
-$lang['ionize_label_comment_allow'] =		'İzin Ver';
-$lang['ionize_label_comment_autovalid'] =	'Otomatik Doğrulama';
-$lang['ionize_label_comment_expire'] =		'Tarih Limiti';
-$lang['ionize_label_tags'] =				'Anahtar Kelimeler';
-$lang['ionize_label_existing_tags'] =		'Var Olan Anahtar Kelimeler';
-$lang['ionize_label_ordering_first'] =		'ilk';
-$lang['ionize_label_ordering_last'] =		'son';
-$lang['ionize_label_ordering_after'] =		'sonra...';
-$lang['ionize_label_content_for_lang'] = 'İçerik';
-$lang['ionize_label_online_for_lang'] = 'Yayınla';
-$lang['ionize_label_actions'] = 'Hareketler';
-$lang['ionize_label_pages'] = 'Sayfalar';
-$lang['ionize_label_drag_to_page'] = 'Bir sayfaya sürükleyin';
-$lang['ionize_label_article_edit_context'] = 'Ayarlar';
-$lang['ionize_label_article_filter'] = 'Filtrele';
-$lang['ionize_label_article_context_edition'] = 'Düzenleme Kapsamında';
+$lang['ionize_title_article_context'] = 'Article context';
+$lang['ionize_title_content'] = 'Content';
+$lang['ionize_label_article_in'] = 'In';
+$lang['ionize_label_article_online'] = 'Article Online';
+$lang['ionize_label_article_content_online'] = 'Content Online';
+$lang['ionize_label_parents'] = 'Parents';
+$lang['ionize_label_indexed'] = 'Indexed';
+$lang['ionize_label_categories'] = 'Categories';
+$lang['ionize_label_edit_categories'] = 'Edit categories';
+$lang['ionize_label_new_category'] = 'Create category';
+$lang['ionize_label_comment_allow'] = 'Allow';
+$lang['ionize_label_comment_autovalid'] = 'Auto validation';
+$lang['ionize_label_comment_expire'] = 'Closing date';
+$lang['ionize_label_tags'] = 'Tags';
+$lang['ionize_label_existing_tags'] = 'Existing tags';
+$lang['ionize_label_ordering_first'] = 'first';
+$lang['ionize_label_ordering_last'] = 'last';
+$lang['ionize_label_ordering_after'] = 'after...';
+$lang['ionize_label_content_for_lang'] = 'Content';
+$lang['ionize_label_online_for_lang'] = 'Online';
+$lang['ionize_label_actions'] = 'Actions';
+$lang['ionize_label_pages'] = 'Pages';
+$lang['ionize_label_drag_to_page'] = 'Drag to a page';
+$lang['ionize_label_article_edit_context'] = 'Settings';
+$lang['ionize_label_article_filter'] = 'Filter';
+$lang['ionize_label_article_context_edition'] = 'Editing context';
 
-$lang['ionize_message_article_not_saved'] =		'Makale Kaydedilemedi';
-$lang['ionize_message_article_saved'] =			'Makale Kaydedildi';
-$lang['ionize_message_article_name_exists'] =	'Aynı isimde bir makale zaten mevcut!';
-$lang['ionize_message_article_url_exists'] = 'Aynı URL\'ye sahip bir makale var!';
-$lang['ionize_message_article_ordered'] =		'Makaleler sıralandı';
-$lang['ionize_message_article_duplicate_no_name_change'] = 'Kopyalanan makale başka bir isimde olmak zorunda!';
-$lang['ionize_message_article_duplicated'] = 'Makale kopyalandı';
-$lang['ionize_message_article_not_duplicated'] = 'Makale kopyalanamadı';
-$lang['ionize_message_article_needs_url_or_title'] = 'Varsayılan dil için lütfen başlık yada URL kısmını doldurun !';
-$lang['ionize_message_drop_only_page'] = 'Lütfen sadece bir sayfa taşıyın!';
-$lang['ionize_message_parent_page_unlinked'] = 'Sayfa ve Makalenin ağlantısı başarıyla kaldırıldı';
-$lang['ionize_confirm_article_page_unlink'] = 'Makaleden sayfa bağlantısını kaldır?';
-$lang['ionize_message_article_already_linked_to_page'] = 'Sayfaya makale bağlantısı zaten oluşturulmuş';
-$lang['ionize_message_article_linked_to_page'] = 'Sayfaya makale bağlantısı yapıldı';
-$lang['ionize_message_article_context_saved'] = 'Makale ayarları kaydedildi';
-$lang['ionize_message_article_lang_copied'] = 'Dil verileri kopyalandı. Lütfen Kaydedin !';
+$lang['ionize_message_article_not_saved'] = 'Article not saved : Missing data';
+$lang['ionize_message_article_saved'] = 'Article saved';
+$lang['ionize_message_article_name_exists'] = 'One article with the same name exists already!';
+$lang['ionize_message_article_url_exists'] = 'One article with the same URL exists already!';
+$lang['ionize_message_article_ordered'] = 'Article ordored';
+$lang['ionize_message_article_duplicate_no_name_change'] = 'The duplicated article must have another name!';
+$lang['ionize_message_article_duplicated'] = 'Article duplicated';
+$lang['ionize_message_article_not_duplicated'] = 'Article not duplicated';
+$lang['ionize_message_article_needs_url_or_title'] = 'Please fill title or URL for the default language !';
+$lang['ionize_message_drop_only_page'] = 'Please drop only a page!';
+$lang['ionize_message_parent_page_unlinked'] = 'Page and Article successfuly unlinked';
+$lang['ionize_confirm_article_page_unlink'] = 'Unlink this page from this article?';
+$lang['ionize_message_article_already_linked_to_page'] = 'Article already linked to page';
+$lang['ionize_message_article_linked_to_page'] = 'Article linked to page';
+$lang['ionize_message_article_context_saved'] = 'Article settings saved';
+$lang['ionize_message_article_lang_copied'] = 'Lang data copied. Save please !';
+$lang['ionize_message_article_main_parent_saved'] = 'Main Parent Page saved !';
+
 
 // Inline help
-$lang['ionize_help_article_online'] = 'Bu makale yayındamı?';
-$lang['ionize_help_article_content_online'] = 'Bu içerik yayındamı?';
-$lang['ionize_help_indexed'] =				'Eğer İşaretliyse, makale içerisindeki yazı "FULLTEXT" olarak indexlenecek (Arama Motorları için Hazır)';
-$lang['ionize_help_article_link'] =			"HTTP bağlantısı. Bağlantı tagı ile kullanılabilir";
-$lang['ionize_help_articles_types'] =			"Makale Tipi. Makaleleri ayırmak için faydalı bir sayfa görünümü";
-$lang['ionize_help_article_window_title'] =		'Tarayıcı Penceresi Başlığı';
-$lang['ionize_help_article_context'] = 'Makele sayfasının kaynak verisini düzenle';
-$lang['ionize_help_missing_translated_content'] = 'Bazı içerik dil çevirileri eksik';
-$lang['ionize_help_orphan_article'] = 'Yetim Makale. Hiçbir sayfaya bağlantısı oluşturulmadı.';
-$lang['ionize_help_article_filter'] = 'Makaleleri Filtrele (tam olarak desteklenmiyor)';
+$lang['ionize_help_article_online'] = 'Is this article online?';
+$lang['ionize_help_article_content_online'] = 'Is this content online?';
+$lang['ionize_help_indexed'] = 'If checked, the article content will be fulltext indexed (ready for search engine)';
+$lang['ionize_help_article_link'] = 'HTTP link. Can be used with the link tag';
+$lang['ionize_help_articles_types'] = 'Type of article. Useful for distinguish articles in a page view';
+$lang['ionize_help_article_window_title'] = 'Title of the browser window';
+$lang['ionize_help_article_context'] = 'Edit the article\'s page context data';
+$lang['ionize_help_missing_translated_content'] = 'Some language content translation is missing';
+$lang['ionize_help_orphan_article'] = 'Orphan article. Not linked to any page.';
+$lang['ionize_help_article_filter'] = 'Filter articles (not fully implemented)';
 
-$lang['ionize_button_duplicate_article'] = 'Makaleyi kopyala';
+$lang['ionize_button_duplicate_article'] = 'Duplicate article';
 
 
 /*
 |--------------------------------------------------------------------------
-| Admin : Kategoriler, Tipler & Genişletilmiş Alanlar
+| Admin : Categories, Types & extend fields
 |--------------------------------------------------------------------------
 */
-$lang['ionize_title_categories'] =			'Kategoriler';
-$lang['ionize_title_category_new'] =		'Yeni Kategori';
-$lang['ionize_title_category_edit'] =		'Kategori : Düzenle';
-$lang['ionize_title_category_exist'] =		'Var Olan Kategoriler';
+$lang['ionize_title_categories'] = 'Categories';
+$lang['ionize_title_category_new'] = 'New category';
+$lang['ionize_title_category_edit'] = 'Category : Edit';
+$lang['ionize_title_category_exist'] = 'Existing categories';
 
-$lang['ionize_title_types'] =				'Tipler';
-$lang['ionize_title_types_exist'] = 'Varolan tipler';
-$lang['ionize_title_type_new'] =	'Yeni Tip';
-$lang['ionize_title_type_edit'] =	'Makele Tipi Düzenle';
-$lang['ionize_title_extend_table_field'] = 'Tablo alanı';
+$lang['ionize_title_types'] = 'Types';
+$lang['ionize_title_types_exist'] = 'Existing types';
+$lang['ionize_title_type_new'] = 'New type';
+$lang['ionize_title_type_edit'] = 'Article type edit';
+$lang['ionize_title_extend_table_field'] = 'Table field';
 
-$lang['ionize_label_categories'] =			'Kategoriler';
-$lang['ionize_label_category'] =			'Kategori';
-$lang['ionize_label_edit_categories'] =		'Kategorileri Düzenle';
-$lang['ionize_label_edit_category'] =		'Kategori Düzenle';
-$lang['ionize_label_new_category'] =		'Kategori Oluştur';
+$lang['ionize_label_categories'] = 'Categories';
+$lang['ionize_label_category'] = 'Category';
+$lang['ionize_label_edit_categories'] = 'Edit categories';
+$lang['ionize_label_edit_category'] = 'Editer catégorie';
+$lang['ionize_label_new_category'] = 'Create a category';
 
-$lang['ionize_label_type'] =				'Tip';
-$lang['ionize_label_label'] =				'Etiket';
-$lang['ionize_label_edit_types'] =			'Tipleri Düzenle';
-$lang['ionize_label_new_type'] =			'Yeni Tip';
-$lang['ionize_label_values'] =				'Değerler';	
-$lang['ionize_label_default_value'] =		'Varsayılan Değerler';
-$lang['ionize_label_field_length'] = 'Uzunluk';
-$lang['ionize_label_field_auto_increment'] = 'Otomatik Artış';
-$lang['ionize_label_field_null'] = 'BOŞ ?';
-$lang['ionize_label_field_unsigned'] = 'İmzasız';
+$lang['ionize_label_type'] = 'Type';
+$lang['ionize_label_label'] = 'Label';
+$lang['ionize_label_edit_types'] = 'Edit types';
+$lang['ionize_label_new_type'] = 'New type';
+$lang['ionize_label_values'] = 'Values';
+$lang['ionize_label_default_value'] = 'Defaut values';
+$lang['ionize_label_field_length'] = 'Length';
+$lang['ionize_label_field_auto_increment'] = 'Auto increment';
+$lang['ionize_label_field_null'] = 'NULL ?';
+$lang['ionize_label_field_unsigned'] = 'Unsigned';
 
-$lang['ionize_message_category_name_exists'] =		'Aynı isimde başka bir kategori mevcut!';
-$lang['ionize_message_category_saved'] =			'Kategori Kaydedildi';
-$lang['ionize_message_category_not_saved'] =		'Kategori Kaydedilemedi';
-$lang['ionize_message_category_deleted'] =			'Kategori Silindi';
-$lang['ionize_message_category_not_deleted'] =		'Kategori Silinemedi';
-$lang['ionize_message_category_name_exists'] =		'Bu Kategori Mevcut!';
+$lang['ionize_message_category_name_exists'] = 'One category with this name already exists!';
+$lang['ionize_message_category_saved'] = 'Category saved';
+$lang['ionize_message_category_not_saved'] = 'Category not saved';
+$lang['ionize_message_category_deleted'] = 'Category deleted';
+$lang['ionize_message_category_not_deleted'] = 'Category not deleted';
+$lang['ionize_message_category_name_exists'] = 'This category already exists!';
 
-$lang['ionize_message_article_type_saved'] =			'Makale Tipi Kaydedildi';
-$lang['ionize_message_article_type_not_saved'] =		'Makale Tipi Kaydedilemedi';
-$lang['ionize_message_article_type_deleted'] =			'Tip Silindi';
-$lang['ionize_message_article_type_not_deleted'] =		'Tip Silinemedi';
-$lang['ionize_message_type_exists'] =					'Makele Tipi Zaten Var';
+$lang['ionize_message_article_type_saved'] = 'Article type saved';
+$lang['ionize_message_article_type_not_saved'] = 'Article type not saved';
+$lang['ionize_message_article_type_deleted'] = 'Type deleted';
+$lang['ionize_message_article_type_not_deleted'] = 'Type not deleted';
+$lang['ionize_message_type_exists'] = 'This article type already exists';
 
-$lang['ionize_label_type_text'] =				'Text input';
-$lang['ionize_label_type_textarea'] =			'Textarea';
-$lang['ionize_label_type_editor'] =				'Textarea + Editor';
-$lang['ionize_label_type_checkbox'] =			'Checkbox';
-$lang['ionize_label_type_radio'] =				'Radio';
-$lang['ionize_label_type_select'] =				'Select';
-$lang['ionize_label_type_datetime'] = 'Tarih & Zaman';
-
-$lang['ionize_label_add_field'] = 'Alan ekle';
-$lang['ionize_label_extend_field_for_all'] = 'Genel';
-$lang['ionize_label_extend_field_for_pages'] = 'Sayfalara';
-$lang['ionize_label_extend_field_for_articles'] = 'Makalelere';
-$lang['ionize_label_extend_field_for_medias'] = 'Medyalara';
-$lang['ionize_label_extend_field_parent'] = 'Alt Öğe';
+$lang['ionize_label_type_text'] = 'Text input';
+$lang['ionize_label_type_textarea'] = 'Textarea';
+$lang['ionize_label_type_editor'] = 'Textarea + Editor';
+$lang['ionize_label_type_checkbox'] = 'Checkbox';
+$lang['ionize_label_type_radio'] = 'Radio';
+$lang['ionize_label_type_select'] = 'Select';
+$lang['ionize_label_type_datetime'] = 'Date & Time';
+$lang['ionize_label_add_field'] = 'Add field';
+$lang['ionize_label_extend_field_for_all'] = 'Universal';
+$lang['ionize_label_extend_field_for_pages'] = 'Pages';
+$lang['ionize_label_extend_field_for_articles'] = 'Articles';
+$lang['ionize_label_extend_field_for_medias'] = 'Medias';
+$lang['ionize_label_extend_field_parent'] = 'Parent';
 $lang['ionize_label_extend_field_global'] = 'Global';
-$lang['ionize_title_extend_field_new'] = 'Yeni genişletilmiş alan';
-$lang['ionize_title_extend_fields'] =					'Genişletilmiş Alanlar';
-$lang['ionize_title_extend_field'] =					'Genişletilmiş Alan';
 
-$lang['ionize_label_extend_fields_activate'] =			'Aktive Et';
-$lang['ionize_label_extend_field_type'] =				'Tip';
-$lang['ionize_label_extend_field_translated'] =			'Tercüme Edilebilir';
-$lang['ionize_label_extend_field_context'] =			'Bağlam';
+$lang['ionize_title_extend_field_new'] = 'New Extend Field';
+$lang['ionize_title_extend_fields'] = 'Extend Fields';
+$lang['ionize_title_extend_field'] = 'Extend Fields';
 
-$lang['ionize_message_extend_field_name_exists'] =		'Aynı isimde zaten bir genişletilmiş alan mevcut';
-$lang['ionize_message_extend_field_saved'] =			'Genişletilmiş Alan Kaydedildi';
-$lang['ionize_message_extend_field_not_saved'] =		'Hata : Lütfen Alan Adını Girin!';
-$lang['ionize_message_extend_field_deleted'] =			'Genişletilmiş Alan Silindi';
-$lang['ionize_message_extend_field_not_deleted'] =		'Genişletilmiş Alan Silinemedi';
-$lang['ionize_message_field_must_have_a_name'] = 'Alanın bir adı olmalı';
-$lang['ionize_message_varchar_int_must_have_length'] = 'VARCHAR yada INT alanının uzunluğu olmak zorunda';
-$lang['ionize_message_field_name_sql_reserved'] = 'Seçmiş olduğunuz alan ismi SQL ayrılmış bir kelimedir. Lütfen değiştirin.';
+$lang['ionize_label_extend_fields_activate'] = 'Activate';
+$lang['ionize_label_extend_field_type'] = 'Type';
+$lang['ionize_label_extend_field_translated'] = 'Can be translated';
+$lang['ionize_label_extend_field_context'] = 'Context';
 
-$lang['ionize_help_ef_parent'] = 'Bu genişletilmiş alanı alt öğe gibi limitleyin yada limitlemeyin';
-$lang['ionize_help_ef_global'] = 'Genişletilmiş alan her bir element için görünebilirmi ?';
-$lang['ionize_help_ef_name'] = 'Anahtarı alan içerisinde kullanma etiketi. Örnek : &#8249;ion:field name=&#34;field-name&#34; /&#8250;';
-$lang['ionize_help_ef_values'] =				'anahtar:değer, satır sonu ile ayrılmış';
-$lang['ionize_help_ef_default_value'] =			'Eğer select, radio veya checkbox sa, anahtar koyun';
-$lang['ionize_help_ef_description'] = 'Bu alan için kullanıcı için gösterilecek yardım, bu baloncuz gibi';
-$lang['ionize_help_label_label'] = 'Ionizede alan için gösterilecek etiket';
-$lang['ionize_help_field_length'] = 'Alan uzunluğu';
+$lang['ionize_message_extend_field_name_exists'] = 'An Extend Field with this name already exists';
+$lang['ionize_message_extend_field_saved'] = 'Extend Field saved';
+$lang['ionize_message_extend_field_not_saved'] = 'Error : Please enter a field name!';
+$lang['ionize_message_extend_field_deleted'] = 'Extend Field deleted';
+$lang['ionize_message_extend_field_not_deleted'] = 'Extend Field not deleted';
+$lang['ionize_message_field_must_have_a_name'] = 'The field must have a name';
+$lang['ionize_message_varchar_int_must_have_length'] = 'VARCHAR or INT field must have a length';
+$lang['ionize_message_field_name_sql_reserved'] = 'The field name you choose is a SQL reserved word. Please change.';
 
+$lang['ionize_help_ef_parent'] = 'Limit this extend field to a kind of parent or not';
+$lang['ionize_help_ef_global'] = 'Is the extend field always visible for each element ?';
+$lang['ionize_help_ef_name'] = 'Key to use with the field tag. Example : &#8249;ion:field name=&#34;field-name&#34; /&#8250;';
+$lang['ionize_help_ef_values'] = 'key:value, separated by a line break';
+$lang['ionize_help_ef_default_value'] = 'If select, radio or checkbox, put the key';
+$lang['ionize_help_ef_description'] = 'Displayed user help about this field, like this tooltip';
+$lang['ionize_help_label_label'] = 'Displayed label of this field, in Ionize';
+$lang['ionize_help_field_length'] = 'Field length';
 
 
 /*
@@ -887,13 +908,13 @@ $lang['ionize_help_field_length'] = 'Alan uzunluğu';
 | Admin : Translations
 |--------------------------------------------------------------------------
 */
-$lang['ionize_message_language_files_saved'] =			'Çeviriler Kaydedildi';
-$lang['ionize_message_language_dir_creation_fail'] =	'Klasör oluşturmak imkansız';
-$lang['ionize_message_language_file_creation_fail'] =	'Dosyaya Yazmak imkansız';
-$lang['ionize_label_expand_all'] =						'Tümünü Genişlet';
-$lang['ionize_label_collapse_all'] =					'Tümünü Daralt';
-$lang['ionize_label_add_translation'] = 'Çevrilmiş öğe ekle';
-$lang['ionize_message_delete_translation'] = 'Bu çeviri öğesi silinsin mi?';
+$lang['ionize_message_language_files_saved'] = 'Translations saved';
+$lang['ionize_message_language_dir_creation_fail'] = 'Folder creation impossible';
+$lang['ionize_message_language_file_creation_fail'] = 'File writing impossible';
+$lang['ionize_label_expand_all'] = 'Expand all';
+$lang['ionize_label_collapse_all'] = 'Collapse all';
+$lang['ionize_label_add_translation'] = 'Add a translated item';
+$lang['ionize_message_delete_translation'] = 'Delete this translation item?';
 
 
 /*
@@ -901,8 +922,8 @@ $lang['ionize_message_delete_translation'] = 'Bu çeviri öğesi silinsin mi?';
 | Admin : Media Manager
 |--------------------------------------------------------------------------
 */
-$lang['ionize_image_manager'] =	'Resimler';
-$lang['ionize_file_manager'] =	'Dosyalar';
+$lang['ionize_image_manager'] = 'Pictures';
+$lang['ionize_file_manager'] = 'Files';
 
 
 /*
@@ -910,20 +931,20 @@ $lang['ionize_file_manager'] =	'Dosyalar';
 | Admin : Modules
 |--------------------------------------------------------------------------
 */
-$lang['ionize_title_modules_list'] =		'Modül Listesi';
-$lang['ionize_label_module_name'] =			'Adı';
-$lang['ionize_label_module_uri'] =			'URI';
-$lang['ionize_label_module_install'] =		'Yükle';
-$lang['ionize_label_module_uninstall'] =	'Kaldır';
-$lang['ionize_label_database_tables'] = 'Tablolar';
+$lang['ionize_title_modules_list'] = 'Modules list';
+$lang['ionize_label_module_name'] = 'Name';
+$lang['ionize_label_module_uri'] = 'URI';
+$lang['ionize_label_module_install'] = 'Install';
+$lang['ionize_label_module_uninstall'] = 'Uninstall';
+$lang['ionize_label_database_tables'] = 'Tables';
 
-$lang['ionize_message_module_install_error_no_config'] =		'Hata : Module without config.xml';
-$lang['ionize_message_module_install_error_config_write'] =		"Yazma Hatası : config/modules.php";
-$lang['ionize_message_module_page_conflict'] =					"Hata : Var Olan Bir URI";
-$lang['ionize_message_module_install_database_error'] =			"Hata : Mödül Tablolarını Yüklemek İmkansız";
-$lang['ionize_message_module_saved'] =							'Modül Yüklendi';
-$lang['ionize_message_module_uninstalled'] =					'Modül Kaldırıldı';
-$lang['ionize_message_module_not_installed'] =					'Modül Yüklenemedi !';
+$lang['ionize_message_module_install_error_no_config'] = 'Error : Module without config.xml';
+$lang['ionize_message_module_install_error_config_write'] = 'Write error : application/config/modules.php';
+$lang['ionize_message_module_page_conflict'] = 'Error : URI conflict with an existing page';
+$lang['ionize_message_module_install_database_error'] = 'Error when installing tables';
+$lang['ionize_message_module_saved'] = 'Module installed';
+$lang['ionize_message_module_uninstalled'] = 'Module uninstalled';
+$lang['ionize_message_module_not_installed'] = 'Module not installed !';
 
 
 /*
@@ -931,9 +952,21 @@ $lang['ionize_message_module_not_installed'] =					'Modül Yüklenemedi !';
 | Admin : System Check
 |--------------------------------------------------------------------------
 */
-$lang['ionize_title_system_check'] = 'Sistem Denetim Aracı';
-$lang['ionize_menu_system_check'] = 'Sistemi Kontrol Et';
-$lang['ionize_text_system_check'] = 'Bu araç Ionize bütünlüğünü ve onarımını kontrol etmek için kullanılı. Bu özelliği kullanarak hiçbirşey kıramazsınız.';
+$lang['ionize_title_system_check'] = 'System Diagnotic Tool';
+$lang['ionize_menu_system_check'] = 'System Diagnotic';
+$lang['ionize_text_system_check'] = 'These tools check the Ionize integrity and repair what should be. You cannot break anything by using this.';
 
-$lang['ionize_label_start_system_check'] = 'Kontrolü Başlat';
-$lang['ionize_button_start_system_check'] = 'Kontrolü Başlat';
+$lang['ionize_label_start_system_check'] = 'Start Check';
+$lang['ionize_button_start_system_check'] = 'Start Check';
+
+$lang['ionize_title_check_page_level'] = 'Check Pages Levels';
+$lang['ionize_title_check_article_context'] = 'Check Articles Contexts';
+
+$lang['ionize_message_check_corrected'] = ' corrected.';
+$lang['ionize_message_check_ok'] = 'Everything\'s fine.';
+
+
+
+
+
+
