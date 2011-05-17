@@ -486,6 +486,8 @@ $lang['ionize_title_thumbs_system'] =		'Ionize sistem küçük resmi';
 $lang['ionize_title_form_antispam_key'] = 'Antispam JS anahtarı';
 $lang['ionize_title_article_management'] = 'Makale Yönetimi';
 $lang['ionize_title_admin_url'] = 'Yönetim Paneli Yolu';
+$lang['ionize_title_encryption_key'] = 'Şifreleme Anahtarı';
+$lang['ionize_title_cache'] = 'Ön Bellek Sistemi';
 
 $lang['ionize_label_thumb_automatic'] = 'Otomatik';
 $lang['ionize_label_files_path'] =			'Medya ana dizini';
@@ -519,6 +521,10 @@ $lang['ionize_label_email_charset'] =		'Karakter Kodlaması';
 $lang['ionize_label_email_mailtype'] =		'Format';
 $lang['ionize_label_mailpath'] =			'Posta Yolu';
 
+$lang['ionize_label_cache_enabled'] = 'Aktif';
+$lang['ionize_label_cache_expiration'] = 'Süre (dk.)';
+$lang['ionize_label_clear_cache'] = 'Önbelleği Temizle';
+$lang['ionize_button_clear_cache'] = 'Temizle';
 $lang['ionize_label_thumb_dir'] = 			'Dosya';
 $lang['ionize_label_thumb_size'] = 			'Boyut';
 $lang['ionize_label_thumb_sizeref'] = 		'Referans';
@@ -563,6 +569,8 @@ $lang['ionize_message_error_writing_database_file'] = 	'/config/database.php yaz
 $lang['ionize_message_error_writing_email_file'] = 		'/config/email.php yazılamıyor !';
 $lang['ionize_message_error_writing_ionize_file'] = 'application/config/ionize.php yazılamıyor !';
 
+$lang['ionize_message_cache_saved'] = 'Önbellek Ayarları Kaydedildi.';
+$lang['ionize_message_cache_cleared'] = 'Önbellek Temizlendi.';
 
 $lang['ionize_help_setting_google_analytics'] = 'Google Analytics web sitesinden kopyaladığınız script ile analytics işlemini tamamlayın';
 $lang['ionize_help_setting_files_path'] =			"Medya Dosya Yolu Belirtin. Fiziksel dosya adını değiştirmeyin";
@@ -577,6 +585,9 @@ $lang['ionize_help_setting_picture_max_height'] = 'Yükeleme esnasında resim bo
 $lang['ionize_help_setting_picture_max_width'] = 'Yükeleme esnasında resim boyutları belirtilen boyutları aşarsa yeniden boyutlandırılır.';
 $lang['ionize_help_tinyblockformats'] = 'Varsayılan TinyMCE Blok Biçimi (Seç)';
 
+$lang['ionize_help_cache_enabled'] = 'Ön Belleği Aç / Kapat. Ön belleği kapatmak varolan önbeller verilerini temizleyecek.';
+$lang['ionize_help_cache_expiration'] = 'Belirtiğiniz dakika içerisinde sayfalar yeniden önbelleğe alınacak.';
+$lang['ionize_help_clear_cache'] = 'Tüm önbellek dosyalarını sil.';
 /*
 |--------------------------------------------------------------------------
 | Admin : Temalar
@@ -679,6 +690,7 @@ $lang['ionize_label_link'] =				'Bağlantı';
 $lang['ionize_label_description'] =			'Açıklama';
 $lang['ionize_label_reload_media_list'] =	"Medya Listesini Tekrar Yükle";
 $lang['ionize_label_media_container'] = 'Albüm / Serisi';
+$lang['ionize_label_media_crop_picture'] = 'Resmi Kes';
 
 $lang['ionize_message_please_save_first'] =		"Lütfen medya eklemeden önce kaydedin";
 $lang['ionize_message_media_not_authorized'] =	'Medya türü desteklenmiyor !';
@@ -774,6 +786,7 @@ $lang['ionize_message_article_already_linked_to_page'] = 'Sayfaya makale bağlan
 $lang['ionize_message_article_linked_to_page'] = 'Sayfaya makale bağlantısı yapıldı';
 $lang['ionize_message_article_context_saved'] = 'Makale ayarları kaydedildi';
 $lang['ionize_message_article_lang_copied'] = 'Dil verileri kopyalandı. Lütfen Kaydedin !';
+$lang['ionize_message_article_main_parent_saved'] = 'Ana Alt Sayfa kaydedildi !';
 
 // Inline help
 $lang['ionize_help_article_online'] = 'Bu makale yayındamı?';
@@ -924,3 +937,19 @@ $lang['ionize_message_module_uninstalled'] =					'Modül Kaldırıldı';
 $lang['ionize_message_module_not_installed'] =					'Modül Yüklenemedi !';
 
 
+/*
+|--------------------------------------------------------------------------
+| Admin : System Check
+|--------------------------------------------------------------------------
+*/
+$lang['ionize_title_system_check'] = 'Sistem Denetim Aracı';
+$lang['ionize_menu_system_check'] = 'Sistemi Kontrol Et';
+$lang['ionize_text_system_check'] = 'Bu araç Ionize bütünlüğünü ve onarımını kontrol etmek için kullanılı. Bu özelliği kullanarak hiçbirşey kıramazsınız.';
+
+$lang['ionize_label_start_system_check'] = 'Kontrolü Başlat';
+$lang['ionize_button_start_system_check'] = 'Kontrolü Başlat';
+$lang['ionize_title_check_page_level'] = 'Sayfa düzeylerini kontrol et';
+$lang['ionize_title_check_article_context'] = 'Makale bağlamlarını kontrol et';
+
+$lang['ionize_message_check_corrected'] = ' düzeltildi.';
+$lang['ionize_message_check_ok'] = 'Herşey normal.';
