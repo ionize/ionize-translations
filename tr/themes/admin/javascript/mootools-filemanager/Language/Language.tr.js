@@ -31,6 +31,7 @@ FileManager.Language.tr = {
 
 	rename: 'Yeniden Adlandır',
 	renamefile: 'Lütfen yeni bir dosya adı girin:',
+	rn_mv_cp: 'Yeniden Adlandır/Taşı/Kopyala',
 
 	download: 'İndir',
 	nopreview: '<i>Önizleme mevcut değil</i>',
@@ -65,6 +66,7 @@ FileManager.Language.tr = {
 	'backend.path_not_writable': 'Belirtilen yükleme klasöründe yazma izniniz yok.',
 	'backend.filename_maybe_too_large': 'Dosya ismi yada yolu sunucu dosya sistemi için çok uzun. Daha kısa bir dosya adıyla yeniden deneyin.',
 	'backend.fmt_not_allowed': 'Yükleme için bu dosya biçimi yada adında izin verilmiyor.',
+	'backend.read_error': 'Belirtilen dosya okunamıyot / indirilemiyor.',
 	'backend.unidentified_error': '(Sunucuda) Yönetim paneliyle iletişimde bilinmeyen bir hata oluştu.',
 
 	'backend.nonewfile': 'Dosya için yeni bir isimle taşınacak veya kopyalanacak',
@@ -101,7 +103,7 @@ FileManager.Language.tr = {
 	uploader: {
 		unknown: 'Bilinmeyen hata',
 		sizeLimitMin: 'Eklenemez "<em>${name}</em>" (${size}), Minimun dosya boyutu <strong>${size_min}</strong>!',
-		sizeLimitMax: 'Eklenemez "<em>${name}</em>" (${size}), dosya boyutu limiti <strong>${size_max}</strong>!'
+		sizeLimitMax: 'Eklenemez "<em>${name}</em>" (${size}), dosya boyutu limiti <strong>${size_max}</strong>!',
 		mod_security: 'No response was given from the uploader, this may mean that "mod_security" is active on the server and one of the rules in mod_security has cancelled this request.  If you can not disable mod_security, you may need to use the NoFlash Uploader.'
 	},
 	
