@@ -4,7 +4,7 @@
 |--------------------------------------------------------------------------
 | Ionize Language file
 | Language : Turkish
-| Translater : Ukyo, 27 04 2011
+| Translater : Ukyo, 21 05 2011
 |
 | Kullanımı :
 | Form Etiketleri :					ionize_label_*
@@ -618,6 +618,7 @@ $lang['ionize_title_create_page'] = 'Sayfa oluştur';
 $lang['ionize_title_new_page'] =				'Sayfa Oluştur';
 $lang['ionize_title_edit_page'] =				"Sayfa Düzenle";
 $lang['ionize_title_page_parent'] = 'Ana / Kaynak';
+$lang['ionize_title_sub_navigation'] = 'Navigasyon';
 
 $lang['ionize_title_help_articles_types'] = 'Tipler Hakkında';
 $lang['ionize_label_page_online'] = 'Sayfa yayında';
@@ -631,7 +632,14 @@ $lang['ionize_label_article_list_template'] =	'Görüntü Listesi';
 $lang['ionize_label_page_delete_date'] = 'Sayfa tarih silme';
 $lang['ionize_label_menu'] = 'Menü';
 $lang['ionize_label_home_page'] = 'Ana sayfa';
+$lang['ionize_label_article_reorder'] = 'Kayıtlı Makaleler';
+$lang['ionize_label_date_asc'] = 'Tarih Artan';
+$lang['ionize_label_date_desc'] = 'Tarih Azalan';
+$lang['ionize_label_no_sub_navigation'] = '-- Hiçbiri --';
 
+
+
+$lang['ionize_button_reorder'] = 'Tekrar Sırala';
 $lang['ionize_select_default_view'] =			'-- Varsayılan Görüntü --';
 $lang['ionize_select_everyone'] =				'-- Herkez --';
 
@@ -643,6 +651,7 @@ $lang['ionize_message_page_not_exist'] =		"Sayfa yok";
 $lang['ionize_message_page_ordered'] =			'Sayfa Sıralandı';
 $lang['ionize_message_page_needs_url_or_title'] = 'Lütfen varsayılan dil için URL yada Başlık giriniz !';
 $lang['ionize_message_drop_only_article'] = 'Lütfen sadece bir makale bırakın!';
+$lang['ionize_message_articles_ordered'] = 'Makaleler Sıralandı !';
 
 $lang['ionize_help_page_online'] =				'Bu sayfa yayındamı?';
 $lang['ionize_help_page_content_online'] = 'Bu sayfa bu dil için yayındamı?';
@@ -658,6 +667,7 @@ $lang['ionize_help_add_page_to_menu'] = 'Bu menüye sayfa ekle';
 $lang['ionize_help_page_drop_article_here'] = 'Soldaki ağaç menüden makalenin ismini seçerek taşıyın.';
 $lang['ionize_label_help_articles_types_and_views'] = 'Tipler & Görünümler Hakkında';
 $lang['ionize_label_help_articles_types'] = 'Tipler Hakkında';
+$lang['ionize_label_help_articles_reorder'] = 'Makaleleri tarihe göre sırala. Tarih hesaplaması : Makul yada Yayınlanma veya Oluşturulma.';
 
 /*
 |--------------------------------------------------------------------------
@@ -791,7 +801,7 @@ $lang['ionize_message_article_main_parent_saved'] = 'Ana Alt Sayfa kaydedildi !'
 // Inline help
 $lang['ionize_help_article_online'] = 'Bu makale yayındamı?';
 $lang['ionize_help_article_content_online'] = 'Bu içerik yayındamı?';
-$lang['ionize_help_indexed'] =				'Eğer İşaretliyse, makale içerisindeki yazı "FULLTEXT" olarak indexlenecek (Arama Motorları için Hazır)';
+$lang['ionize_help_indexed'] =				'Eğer İşaretliyse, makale içerisindeki yazı FULLTEXT olarak indexlenecek (Arama Motorları için Hazır)';
 $lang['ionize_help_article_link'] =			"HTTP bağlantısı. Bağlantı tagı ile kullanılabilir";
 $lang['ionize_help_articles_types'] =			"Makale Tipi. Makaleleri ayırmak için faydalı bir sayfa görünümü";
 $lang['ionize_help_article_window_title'] =		'Tarayıcı Penceresi Başlığı';
@@ -944,7 +954,7 @@ $lang['ionize_message_module_not_installed'] =					'Modül Yüklenemedi !';
 */
 $lang['ionize_title_system_check'] = 'Sistem Denetim Aracı';
 $lang['ionize_menu_system_check'] = 'Sistemi Kontrol Et';
-$lang['ionize_text_system_check'] = 'Bu araç Ionize bütünlüğünü ve onarımını kontrol etmek için kullanılı. Bu özelliği kullanarak hiçbirşey kıramazsınız.';
+$lang['ionize_text_system_check'] = 'Bu araç Ionize bütünlüğünü ve onarımını kontrol etmek için kullanılır. Bu özelliği kullanarak hiçbirşeyi bozamazsınız.';
 
 $lang['ionize_label_start_system_check'] = 'Kontrolü Başlat';
 $lang['ionize_button_start_system_check'] = 'Kontrolü Başlat';
