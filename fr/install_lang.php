@@ -114,7 +114,8 @@ $lang['user_error_email_not_valid'] = 			"L'adresse email ne semble pas valide.<
 $lang['user_error_passwords_not_equal'] = 		"Le mot de passe et sa confirmation ne sont pas égaux";
 $lang['user_info_admin_exists'] = 		"Un compte Administrateur existe déjà.<br/>Vous pouvez passer cette étape si vous ne souhaitez pas créer ou mettre à jour de compte Admin.";
 $lang['encryption_key'] = 			"Clé d'encryption";
-$lang['encryption_key_text'] = 		"";
+$lang['encryption_key_text'] = 		"ionize nécessite une clé d'encryption 128 bits.<br/>Cette clé va encoder les comptes utilisateurs et toutes les données sensibles.<br/>Elle sera conservée dans le fichier<br/>/application/config/config.php.
+";
 $lang['no_encryption_key_found'] = 	"La clé d'encryption n'a pas été trouvée. <b>Vous devez créer un utilisateur Admin.</b>";
 
 
@@ -123,11 +124,11 @@ $lang['no_encryption_key_found'] = 	"La clé d'encryption n'a pas été trouvée
 | Data
 |--------------------------------------------------------------------------
 */
-$lang['data_install_intro'] = 	"";
+$lang['data_install_intro'] = 	"<p>Si cette installation est votre première installation de ionize, nous vous conseillons d'installer les données exemple.<br/>Ces données contiennent:</p><ul><li>Des données de site complètes, utiles pour découvrir ionize,</li><li>Un thème d'exemple</li></ul> ";
 $lang['title_skip_this_step'] = "Passer cette étape";
 
 $lang['title_finish'] = 		"Installation terminée";
 $lang['finish_text'] = 			"<b>IMPORTANT</b>: <br/>Vous devez supprimer le dossier \"<b>/install</b>\" manuellement avant de pouvoir utiliser l'application.";
 $lang['button_go_to_admin'] = 	"Aller à l'administration";
 $lang['button_go_to_site'] = 	"Aller au site";
-$lang['system_check_text'] = "<p>Tous ces indicateurs doivent être au vert pour continuer.</p>";$lang['data_install_list'] = "";
+$lang['system_check_text'] = "<p>Tous ces indicateurs doivent être au vert pour continuer.</p>";
