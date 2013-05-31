@@ -63,8 +63,9 @@ $lang['database_username'] = 'Kullanıcı Adı';
 $lang['database_password'] = 'Şifre';
 $lang['database_create'] = 'Veritabanını Oluştur';
 $lang['title_database_create'] = 'Veritabanı Oluşturma';
-$lang['db_create_text'] = '<b class="highlight">Yeni Yükleme</b> : Veritabanı ve Tablolar Oluşturulacak<br/><b class="highlight2">Yükseltme</b> : Sonraki Adım Güncellemeye İhtiyaç Olup Olmadığını Kontrol Edecek<br/>';
-$lang['db_create_prerequisite'] = 'Kullanıcının Veritabanı Oluşturma Hakkının Olması Lazım.<br/>Eğer Veritabanınız Var İse, Kontrol Etmenize Gerek Yok.';
+$lang['db_create_text'] = 			"<b class="highlight">Yeni Yükleme</b> : Veritabanı ve Tablolar Oluşturulacak<br/><b class="highlight2">Yükseltme</b> : Sonraki Adım Güncellemeye İhtiyaç Olup Olmadığını Kontrol Edecek<br/>";
+$lang['db_create_prerequisite'] = 			"Kullanıcının Veritabanı Oluşturma Hakkının Olması Lazım.<br/>Eğer Veritabanınız Var İse, Kontrol Etmenize Gerek Yok.";
+
 
 $lang['database_error_missing_settings'] = 'Bazı Bilgiler Eksik.<br/>Lütfen Tüm Alanları Doldurun !';
 $lang['database_success_install'] = '<b class="ex">Veritabanı Başarıyla Yüklendi.</b>';
@@ -113,7 +114,7 @@ $lang['user_error_missing_settings'] = 'Lütfen Tüm Alanları Doldurunuz !';
 $lang['user_error_not_enough_char'] = 'Kullanıcı Adı ve Parola Uzunluğu 4 Karakterden Uzun Olmak Zorunda!';
 $lang['user_error_email_not_valid'] = 'E-Posta Adresiniz Geçerli Görünmüyor. Lütfen Düzeltiniz.';
 $lang['user_error_passwords_not_equal'] = 'Parola ve Parola Onaylama Uyuşmuyor.	';
-$lang['user_info_admin_exists'] = 'Bir Kullanıcı Yönetici Konumunda Veritabanında Mevcut.<br/>Bu Adımı Atlayabilirsiniz Eğer İsterseniz Yönetici Oluşturmayabilir veya Güncellemeyebilirsiniz.';
+$lang['user_info_admin_exists'] = 'Bir Kullanıcı Yönetici Konumunda Veritabanında Mevcut.<br/>Bu Adımı Atlayabilirsiniz Eğer İsterseniz Yönetici Oluşturmayabilir veya Güncellemeyebilirsiniz.<br/>ÖNEMLİ : Kayıtlı kullanıcıların giriş yapabilmesi için eski sitenizden şifreleme anahtarını kopyalamanız gerekiyor : <br/>Bakınız : /application/config/config.php -> $config[\'encryption_key\']';
 $lang['encryption_key'] = 'Şifreleme Anahtarı';
 $lang['encryption_key_text'] = 'Ionize Şifreleme Anahtarına İhtiyaç Duyuyor.<br />
 									Bu Anahtar Kullanıcı Hesapları ve Hassas Verileri Şifreler.<br/>
