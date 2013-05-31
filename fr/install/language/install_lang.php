@@ -7,7 +7,8 @@ $lang = array();
 | General
 |--------------------------------------------------------------------------
 */
-$lang['title_ionize_installation'] = 		"Installation";
+$lang['title_ionize_installation'] = 		"Ionize Installation";
+$lang['title_welcome'] = 'Bienvenue sur Ionize !';
 
 $lang['title_system_check'] = 		"Résultat du test système";
 $lang['title_database_settings'] = 	"Paramètres de base de données";
@@ -44,7 +45,7 @@ $lang['write_config_dir'] = 	"<b>/application/config/</b>";
 $lang['write_files'] = 			"<b>/files/</b>";
 $lang['write_themes'] = 		"<b>/themes/*</b>";
 $lang['config_check_errors'] = 	"Certains prérequis ne sont pas remplis.<br/> Veuillez corriger avant de poursuivre l'installation.";
-$lang['welcome_text'] = 		"<p>Bienvenue sur Ionize !<br/>Ces quelques étapes vont vous permettre d'installer Ionize.</p>";
+$lang['welcome_text'] = 		"<p>Les étapes suivantes vont vous permettre d'installer Ionize.</p><p>Vous trouverez ci-dessous les résultats de la vérification des pré-requis.<br/>Si certains ne sont pas remplis, veuillez corriger et raffraichir cette page.</p>";
 $lang['write_check_text'] = 	"<p>Ionize doit pouvoir écrire les dossiers et fichiers suivants...</p>";
 $lang['title_folder_check'] = 	"Ionize doit posséder les droits d'écriture sur ces dossiers";
 $lang['title_files_check'] = 	"Ionize doit posséder les droits d'écriture sur ces fichiers";
@@ -61,7 +62,7 @@ $lang['database_username'] = 		"Utilsateur";
 $lang['database_password'] = 		"Mot de passe";
 $lang['database_create'] = 			"Créer la base";
 $lang['title_database_create'] = 	"Création de la base de données";
-$lang['db_create_text'] = 			"<p>Ionize va installer ou migrer votre base de données :</p><p><b class=\"highlight\">Nouvelle installation</b> : Base et tables vont être créées.<br/><b class=\"highlight2\">Upgrade</b> : La migration se fera à la prochaine étape.</p>";
+$lang['db_create_text'] = 			"<p>Veuillez saisir vos paramètres de connexion à la base de données.<br/>En cas de migration, Ionize va détecter la version installée et mettre à jour la base de données.</p><p><strong>Important : </strong>Si vous migrez, veuillez au préalable effectuer une sauvegarde de votre base.</p>";
 $lang['db_create_prerequisite'] = 			"L'utilisateur doit posséder les droits de création de base.<br/> Si votre base existe déjà, ne cochez pas cette case.";
 $lang['database_error_missing_settings'] = 	"Certaines informations sont manquantes.<br/>Veuillez remplir tous les champs.";
 $lang['database_success_install'] = 		"<b class=\"ex\">La base de donnée a été installée avec succès.</b>";
@@ -112,7 +113,7 @@ $lang['user_error_missing_settings'] = 			"Veuillez renseigner tous les champs !
 $lang['user_error_not_enough_char'] = 			"Les nom d'utilisateur et mot de passe doivent au moins faire 4 caractères !";
 $lang['user_error_email_not_valid'] = 			"L'adresse email ne semble pas valide.<br/> Veuillez corriger.";
 $lang['user_error_passwords_not_equal'] = 		"Le mot de passe et sa confirmation ne sont pas égaux";
-$lang['user_info_admin_exists'] = 		"Un compte Administrateur existe déjà.<br/>Vous pouvez passer cette étape si vous ne souhaitez pas créer ou mettre à jour de compte Admin.";
+$lang['user_info_admin_exists'] = 		"Un compte Administrateur existe déjà.<br/>Vous pouvez passer cette étape si vous ne souhaitez pas créer ou mettre à jour de compte Admin.<br/><br/>IMPORTANT : Vous devez copier le clé d'encryption de votre ancien site pour pouvoir vous connecter dans le cas où cette base contient déjà des comptes utilisateurs :<br/>Voir : /application/config/config.php -> $config['encryption_key']";
 $lang['encryption_key'] = 			"Clé d'encryption";
 $lang['encryption_key_text'] = 		"ionize nécessite une clé d'encryption 128 bits.<br/>Cette clé va encoder les comptes utilisateurs et toutes les données sensibles.<br/>Elle sera conservée dans le fichier<br/>/application/config/config.php.
 ";
@@ -131,4 +132,3 @@ $lang['title_finish'] = 		"Installation terminée";
 $lang['finish_text'] = 			"<b>IMPORTANT</b>: <br/>Vous devez supprimer le dossier \"<b>/install</b>\" manuellement avant de pouvoir utiliser l'application.";
 $lang['button_go_to_admin'] = 	"Aller à l'administration";
 $lang['button_go_to_site'] = 	"Aller au site";
-$lang['system_check_text'] = "<p>Tous ces indicateurs doivent être au vert pour continuer.</p>";

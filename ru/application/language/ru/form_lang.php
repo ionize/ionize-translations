@@ -17,23 +17,28 @@
 /*
 |--------------------------------------------------------------------------
 | Labels
-| To be used for form lables.
+| To be used for form labels.
 | Also used by Form Validation to display "human" name for each field in the errors messages.
 | Declared as "label" for each fields of forms set in /config/ionize.php
 |--------------------------------------------------------------------------
 */
-$lang['form_label_email'] = 'Email';
-$lang['form_label_name'] = 'Имя';
-$lang['form_label_firstname'] = 'Имя';
-$lang['form_label_lastname'] = 'Фамилия';
-$lang['form_label_screen_name'] = 'Отображаемое имя';
-$lang['form_label_username'] = 'Имя пользователя';
-$lang['form_label_birthdate'] = 'Дата рождения';
-$lang['form_label_gender'] = 'Пол';
-$lang['form_label_login'] = 'Логин';
-$lang['form_label_password'] = 'Пароль';
+$lang['form_label_email'] 			= 'Email';
+$lang['form_label_name'] 			= 'Имя';
+$lang['form_label_firstname'] 		= 'Имя';
+$lang['form_label_lastname'] 		= 'Фамилия';
+$lang['form_label_subject'] 		= 'Subject';
+$lang['form_label_message'] 		= 'Message';
+$lang['form_label_screen_name'] 	= 'Отображаемое имя';
+$lang['form_label_username'] 		= 'Имя пользователя';
+$lang['form_label_birthdate'] 		= 'Дата рождения';
+$lang['form_label_gender'] 			= 'Пол';
+$lang['form_label_gender_female'] 	= 'Female';
+$lang['form_label_gender_male'] 	= 'Male';
+$lang['form_label_gender_unisex'] 	= 'I prefer not to say';
+$lang['form_label_login'] 			= 'Логин';
+$lang['form_label_password'] 		= 'Пароль';
 $lang['form_label_password_confirmation'] = 'Подтверждение пароля';
-$lang['form_label_delete_account'] = 'Удалить аккаунт';
+$lang['form_label_delete_account'] 	= 'Удалить аккаунт';
 
 /*
 |--------------------------------------------------------------------------
@@ -47,6 +52,8 @@ $lang['form_button_login'] = "Войти";
 $lang['form_button_logout'] = "Выйти";
 $lang['form_button_post'] = "Сообщение";
 $lang['form_button_answer'] = "Ответить";
+$lang['form_button_save_profile'] = "Save Profile";
+$lang['form_button_password_back'] = "Get password back";
 
 /*
 |--------------------------------------------------------------------------
@@ -67,6 +74,19 @@ $lang['mail_user_registration_activate'] = "Прежде чем войти, не
 $lang['mail_user_password_subject'] = "Новый пароль для вашей учетной записи на %s";
 $lang['mail_user_password_intro'] = "Уважаемый %s,";
 $lang['mail_user_password_message'] = "Вы просто попросил один новый пароль для входа на сайт <b>%s</b>.<br/>Здесь новая информация для входа";
+
+// Contact : Email to Admin
+$lang['mail_website_contact_subject'] = "Message from Contact Form";
+$lang['mail_website_contact_message'] = "One visitor let you a message through the website contact form.";
+
+// Contact : Email to user
+$lang['mail_user_contact_subject'] = "Thank you for your message to %s";
+$lang['mail_user_contact_intro'] = "Dear %s,";
+$lang['mail_user_contact_message'] = "Thank you for your message.<br/>We will answer you very quickly.";
+
+// Message about automatic message
+$lang['mail_automatic_message_warning'] = "This message was automatically generated. Please do not answer.";
+
 
 /*
 |--------------------------------------------------------------------------
@@ -93,34 +113,24 @@ $lang['form_password_error_message'] = "Произошла ошибка";
 $lang['form_password_not_found_message'] = "Этого email нет в нашей системе";
 $lang['form_password_success_message'] = "Письмо с новым паролем только что был послано вам.";
 
+$lang['form_contact_error_title'] = 'Oups, we got an error.';
+$lang['form_contact_error_message'] = 'perhaps just some missing fields. Please check the form...';
+$lang['form_contact_success_title'] = 'Your message was sent successfully !';
+$lang['form_contact_success_message'] = 'Thank you for your message, we will answer you very quickly !';
+
+
 /*
 |--------------------------------------------------------------------------
 | Validation Errors
+| of custom callbacks
+| Must look like : $lang['form_error_<field_key>'] = 'Error message'
+|
+| For custom form validation translation, copy the wished file from
+| /system/language/xx/form_validation_lang.php to your theme language folder
+| /themes/my_theme/language/xx/form_validation_lang.php and adapt it.
+|
 |--------------------------------------------------------------------------
+| $lang['form_error_upload'] = "Something went wrong while uploading the files.";
+|
 */
-$lang['form_error_javascript_required'] = "Вы должны разрешить JavaScript, чтобы отправить эту форму.";
-$lang['form_error_spam'] = "Thank you for your good Spam !";
-$lang['form_error_required'] = "Поле <strong>%s</strong> является обязательным.";
-$lang['form_error_isset'] = "Поле <strong>%s</strong> должно иметь значение.";
-$lang['form_error_valid_email'] = "Поле <strong>%s</strong> должно содержать правильный email адрес.";
-$lang['form_error_valid_emails'] = "Поле <strong>%s</strong>  должно содержать все правильные email адреса.";
-$lang['form_error_valid_url'] = "Поле <strong>%s</strong> должно содержать правильный URL.";
-$lang['form_error_valid_ip'] = "Поле <strong>%s</strong> должно содержать правильный IP.";
-$lang['form_error_min_length'] = "Поле <strong>%s</strong> должно быть по крайней мере %s символов в длину.";
-$lang['form_error_max_length'] = "Поле <strong>%s</strong>  не может превышать %s символов в длину.";
-$lang['form_error_exact_length'] = "Поле <strong>%s</strong>  должны быть точно %s м.";
-$lang['form_error_alpha'] = "Поле <strong>%s</strong>  может содержать только буквы алфавита.";
-$lang['form_error_alpha_numeric'] = "Поле <strong>%s</strong>  может содержать только буквенно-цифровые символы.";
-$lang['form_error_alpha_dash'] = "Поле <strong>%s</strong>  может содержать только буквенно-цифровые символы, подчеркивания и тире.";
-$lang['form_error_numeric'] = "Поле <strong>%s</strong>  должен содержать только цифры.";
-$lang['form_error_is_numeric'] = "Поле <strong>%s</strong>  должны содержать только цифровые символы.";
-$lang['form_error_integer'] = "Поле <strong>%s</strong>  должно содержать целое число.";
-$lang['form_error_matches'] = "Поле <strong>%s</strong>  не совпадают.";
-$lang['form_error_is_natural'] = "Поле <strong>%s</strong>  должно содержать только положительные числа.";
-$lang['form_error_is_natural_no_zero']	= "Поле <strong>%s</strong>  должно содержать число, большее нуля.";
-$lang['form_error_restricted_field'] = "Данные были переданы, которые не допускаются.";
-$lang['form_error_terms'] = "Вы должны согласиться с условиями использования.";
-$lang['form_error_upload_something'] = "Что-то пошло не так при загрузке файлов.";
-$lang['form_error_upload_file_size'] = "Загружаемый файл не должен быть больше, чем 1 MB.";
-$lang['form_error_upload_file_type'] = "Только JPEG, PNG and GIF допускается.";
 

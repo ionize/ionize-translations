@@ -17,9 +17,9 @@
 |--------------------------------------------------------------------------
 */
 
-$lang['dateformat_short'] = 'm d Y';
-$lang['dateformat_medium'] = 'M d Y';
-$lang['dateformat_long'] = 'F d Y';
+$lang['dateformat_short'] 	= 'm d Y';
+$lang['dateformat_medium'] 	= 'M d Y';
+$lang['dateformat_long'] 	= 'F d Y';
 
 $lang['dateformat_complete'] = 'l d F Y \a\t H\hi';
 
@@ -43,13 +43,13 @@ $lang['sun'] = 'воскр';
 | PHP day date format 'l' translations
 |--------------------------------------------------------------------------
 */
-$lang['monday'] = 'понедельник';
-$lang['tuesday'] = 'вторник';
-$lang['wednesday'] = 'среда';
-$lang['thursday'] = 'четверг';
-$lang['friday'] = 'пятница';
-$lang['saturday'] = 'суббота';
-$lang['sunday'] = 'воскресенье';
+$lang['monday'] 	= 'понедельник';
+$lang['tuesday'] 	= 'вторник';
+$lang['wednesday'] 	= 'среда';
+$lang['thursday'] 	= 'четверг';
+$lang['friday'] 	= 'пятница';
+$lang['saturday'] 	= 'суббота';
+$lang['sunday'] 	= 'воскресенье';
 
 /*
 |--------------------------------------------------------------------------

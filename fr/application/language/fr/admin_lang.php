@@ -79,6 +79,7 @@ $lang['ionize_menu_menu'] = "Gérer menus...";
 $lang['ionize_menu_page'] = "Créer page...";
 $lang['ionize_menu_article'] = "Créer article...";
 $lang['ionize_menu_media_manager'] = "Gestionnaire de Media";
+$lang['ionize_menu_medialist'] = "Media List";
 $lang['ionize_menu_modules_admin'] = "Administration...";
 $lang['ionize_menu_site_settings'] = "Paramètres du site...";
 $lang['ionize_menu_global'] = "Généraux...";
@@ -217,6 +218,9 @@ $lang['ionize_label_max_upload_size'] = "Max Upload";
 $lang['ionize_label_file_uploads'] = "Upload ?";
 $lang['ionize_label_environment'] = "Environment";
 $lang['ionize_label_site_email'] = "Email site";
+$lang['ionize_label_email_technical'] = "Technique";
+$lang['ionize_label_email_contact'] = "Contact";
+$lang['ionize_label_email_info'] = "Information";
 $lang['ionize_label_linkto'] = "Lien vers...";
 $lang['ionize_label_drop_link_here'] = "glissez un lien ici...";
 $lang['ionize_label_drop_page_here'] = "glissez une page ici...";
@@ -278,6 +282,7 @@ $lang['ionize_label_options'] = "Options";
 $lang['ionize_label_tracker_edited_by'] = "Edité par";
 $lang['ionize_label_tracker_status_sleeping'] = "Zzz... Zzz...";
 $lang['ionize_label_copy_to_other_languages'] = "Copier vers les autres langues";
+$lang['ionize_label_nb_per_page'] = "Nb / page";
 $lang['ionize_help_has_url'] = "Si coché, l'élément a une URL, et celle-ci est accessible..";
 $lang['ionize_help_status'] = "Si connecté à Ionize, cet élément apparaîtra même s'il est hors ligne";
 $lang['ionize_help_online'] = "Cet élément est-il en ligne ? ?";
@@ -293,7 +298,10 @@ $lang['ionize_help_duplicate_article'] = "Vous devez au moins changer le <b clas
 $lang['ionize_help_environment'] = "Constante d'ENVIRONNEMENT, comme défini dans index.php";
 $lang['ionize_help_environment_flag'] = "La constante d'ENVIRONNEMENT de votre site web est définie à <b>%s</b> dans le fichier index.php.<br/>Avant de le rendre disponible, changez le en : <b>production</b>";
 $lang['ionize_description_flags'] = "Les étiquettes sont utilisés par les types d'articles et ajoutent un étiquette de couleur pour donner une aide visuelle à propos du type de chaque article.<br/>";
-
+$lang['ionize_help_site_email'] = "Tous les emails envoyés depuis le site utilisent cette adresse en tant qu'expéditeur. Exemple : no-reply@mondomaine.tld";
+$lang['ionize_help_email_technical'] = "Adresse de l'administrateur technique du site";
+$lang['ionize_help_email_contact'] = "Adresse généraliste de contact. Le formulaire de contact devrait par exemple poster vers cette adresse.";
+$lang['ionize_help_email_info'] = "Email d'obtention d'information";
 
 /*
 |--------------------------------------------------------------------------
@@ -301,6 +309,7 @@ $lang['ionize_description_flags'] = "Les étiquettes sont utilisés par les type
 |--------------------------------------------------------------------------
 */
 $lang['ionize_button_save'] = "Enregistrer";
+$lang['ionize_button_save_all'] = "Sauver tout";
 $lang['ionize_button_save_close'] = "Enregistrer et fermer";
 $lang['ionize_button_update'] = "Mise à jour";
 $lang['ionize_button_send'] = "Envoyer";
@@ -367,6 +376,9 @@ $lang['ionize_title_existing_languages'] = "Langues existantes";
 $lang['ionize_title_add_language'] = "Ajout d'une langue";
 $lang['ionize_title_advanced_language'] = "Fonctions avancées";
 $lang['ionize_title_lang_urls'] = "Langues et URLs";
+$lang['ionize_label_lang_direction'] = "Direction";
+$lang['ionize_label_lang_direction_ltr'] = "Gauche à Droite";
+$lang['ionize_label_lang_direction_rtl'] = "Droite à Gauche";
 $lang['ionize_message_no_languages'] = "<b>Aucune langue n'est définie</b>. <br/> Veuillez créer une langue au minimum.";
 $lang['ionize_message_lang_saved'] = "Langue enregistrée";
 $lang['ionize_message_lang_not_saved'] = "Langue non enregistrée";
@@ -463,6 +475,14 @@ $lang['ionize_title_admin_panel_languages'] =  "Langues de l'interface d'adminis
 $lang['ionize_title_admin_panel_datetime'] =  "Date et heure";
 $lang['ionize_label_display_connected_label'] = "Label Connecté";
 $lang['ionize_help_display_connected_label'] = "Affiche un label sur le site lorsque vous êtes connecté à l'Administration du site.";
+$lang['ionize_label_display_dashboard_shortcuts'] = "Raccourcis";
+$lang['ionize_help_display_dashboard_shortcuts'] = "Affiche les raccourcis sur le Tableau de Bord Dashboard";
+$lang['ionize_label_display_dashboard_modules'] = "Modules";
+$lang['ionize_help_display_dashboard_modules'] = "Affiche les raccourcis vers les modules installés";
+$lang['ionize_label_display_dashboard_users'] = "Utilisateurs";
+$lang['ionize_help_display_dashboard_users'] = "Affiche les derniers utilisateurs connectés et les derniers utilisateurs enregistrés";
+$lang['ionize_label_display_dashboard_content'] = "Contenu";
+$lang['ionize_help_display_dashboard_content'] = "Affiche les derniers articles édités, les pages et articles orphelins";
 $lang['ionize_label_enable_backend_tracker'] = "Backend tracker";
 $lang['ionize_help_enable_backend_tracker'] = "Affiche les utilisateurs connectés au tableau de bord de l'Administration / affiche un étiquette d'alerte sur le contenu quand il est édité par un autre utilisateur.";
 $lang['ionize_onchange_ionize_settings'] = "L'interface se rafraîchira après sauvegarde de ces paramètres.";
@@ -484,6 +504,8 @@ $lang['ionize_title_theme'] = "Thème";
 $lang['ionize_title_translation'] = "Traductions statiques";
 $lang['ionize_title_database'] = "Base de données";
 $lang['ionize_title_mail_send'] = "Envoi d'emails";
+$lang['ionize_title_emails'] = "Emails";
+$lang['ionize_title_email_server'] = "Paramètre du serveur d'envoi";
 $lang['ionize_title_media_management'] = "Médias";
 $lang['ionize_title_google_analytics'] = "Statistiques";
 $lang['ionize_title_thumb_new'] = "Nouvelle miniature d'image";
@@ -557,6 +579,7 @@ $lang['ionize_label_smtp_host'] = "Serveur";
 $lang['ionize_label_smtp_user'] = "Utilisateur";
 $lang['ionize_label_smtp_pass'] = "Mot de passe";
 $lang['ionize_label_smtp_port'] = "Port";
+$lang['ionize_label_smtp_timeout'] = "Timeout SMTP";
 $lang['ionize_label_email_charset'] = "Charset";
 $lang['ionize_label_email_mailtype'] = "Format";
 $lang['ionize_label_mailpath'] = "Chemin Mail";
@@ -708,6 +731,7 @@ $lang['ionize_label_no_sub_navigation'] = "-- Aucun --";
 $lang['ionize_button_reorder'] = "Réordonner";
 $lang['ionize_select_default_view'] = "-- Vue par défaut --";
 $lang['ionize_select_everyone'] = "-- Tous --";
+$lang['ionize_select_no_one'] = "-- Aucun --";
 $lang['ionize_message_page_name_exists'] = "Cette page existe déjà !";
 $lang['ionize_message_page_url_exists'] = "Une page portant la même URL existe déjà !";
 $lang['ionize_message_page_saved'] = "Page enregistrée";
@@ -745,6 +769,7 @@ $lang['ionize_help_sitemap_priority'] = "Priorité de page, entre 0 et 10";
 |--------------------------------------------------------------------------
 */
 $lang['ionize_title_medias'] = "Medias";
+$lang['ionize_title_medialist'] = "Media List";
 $lang['ionize_title_thumbs_status'] = "Statut des miniatures";
 $lang['ionize_title_informations'] = "Informations";
 $lang['ionize_title_details'] = "Détails";
@@ -759,6 +784,8 @@ $lang['ionize_message_no_file'] = "Aucun fichier attaché";
 $lang['ionize_label_init_thumb'] = "Regénérer miniatures";
 $lang['ionize_label_attach_media'] = "Ajouter média";
 $lang['ionize_label_detach_media'] = "Détacher le média";
+$lang['ionize_label_delete_media'] = "Effacer Media";
+$lang['ionize_label_remove_media'] = "Supprimer Media";
 $lang['ionize_label_detach_all_pictures'] = "Tout détacher";
 $lang['ionize_label_detach_all_videos'] = "Tout détacher";
 $lang['ionize_label_detach_all_musics'] = "Tout détacher";
@@ -808,6 +835,17 @@ $lang['ionize_exception_memory_limit'] = "Limite mémoire atteinte";
 $lang['ionize_exception_image_lib'] = "Erreur Image Lib";
 
 
+$lang['ionize_button_list_view'] = "Vue Liste";
+$lang['ionize_button_card_view'] = "Vue Cartes";
+$lang['ionize_button_save_media_data'] = "Sauvegarder les données";
+$lang['ionize_medialist_filter_by'] = "-- Filtrer par --";
+$lang['ionize_medialist_filter_by_alt_missing'] = "ALT manquant";
+$lang['ionize_medialist_filter_by_broken_src'] = "Source innexistante";
+$lang['ionize_medialist_filter_by_used_in_content'] = "Lié à des Pages ou Articles";
+$lang['ionize_medialist_filter_by_used_in_content_AL_missing'] = "Lié à des Pages ou Articles et ALT manquant";
+$lang['ionize_medialist_filter_by_not_used'] = "Non utilisé";
+
+
 /*
 |--------------------------------------------------------------------------
 | Admin : Article
@@ -842,6 +880,8 @@ $lang['ionize_label_ordering_first'] = "en premier";
 $lang['ionize_label_ordering_last'] = "en dernier";
 $lang['ionize_label_ordering_after'] = "après...";
 $lang['ionize_label_content_for_lang'] = "Contenu";
+$lang['ionize_label_content_ok'] = "Contenu OK";
+$lang['ionize_label_content_missing'] = "Contenu manquant";
 $lang['ionize_label_online_for_lang'] = "En ligne";
 $lang['ionize_label_actions'] = "Actions";
 $lang['ionize_label_pages'] = "Pages";
@@ -1006,7 +1046,7 @@ $lang['ionize_label_module_uri'] = "URI";
 $lang['ionize_label_module_install'] = "Installer";
 $lang['ionize_label_module_uninstall'] = "Désinstaller";
 $lang['ionize_label_database_tables'] = "Tables";
-$lang['ionize_message_module_install_error_no_config'] = "Erreur : Module sans fichier config.xml";
+$lang['ionize_message_module_install_error_no_config'] = "Erreur : Module sans fichier config.php";
 $lang['ionize_message_module_install_error_config_write'] = "Erreur d'écriture : application/config/modules.php";
 $lang['ionize_message_module_page_conflict'] = "Erreur : Conflit de l'URI du module avec une page existante";
 $lang['ionize_message_module_install_database_error'] = "Erreur à l'installation des tables";
@@ -1133,6 +1173,7 @@ $lang['ionize_menu_tags'] = "Tags";
 $lang['ionize_title_tags'] = "Tags";
 $lang['ionize_label_new_tag'] = "Ajouter un Tag";
 $lang['ionize_button_save_tags'] = "Sauver les tags";
+$lang['ionize_button_add_tag'] = "Ajouter tag";
 $lang['ionize_help_tag_textbox'] = "Saisissez un tag ici";
 
 

@@ -1,5 +1,5 @@
 Ionize Russian Translation
-for ionize 0.9.9.5
-last update : 2013.04.31
+for ionize 1.0.2
+last update : 2013.05.30
 
 Author : Victor Efremov (aka XTRO)
