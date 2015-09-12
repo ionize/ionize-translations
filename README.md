@@ -1,7 +1,9 @@
 Ionize Translations
 ====================
 
-Translations packages for [Ionize](http://www.ionizecms.com).
+Translations packages for [Ionize CMS](http://www.ionizecms.com).
+
+[Ionize CMS on github](https://github.com/ionize/ionize)
 
 ### How to create a package
 
